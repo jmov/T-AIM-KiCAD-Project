@@ -87,6 +87,7 @@ LIBS:transf
 LIBS:triac_thyristor
 LIBS:ttl_ieee
 LIBS:maxium
+LIBS:SparkFun
 LIBS:T-AIM-cache
 EELAYER 26 0
 EELAYER END
@@ -186,7 +187,7 @@ P 8450 6100
 F 0 "BZ?" H 8603 6129 50  0000 L CNN
 F 1 "Alarm Buzzer" H 8603 6038 50  0000 L CNN
 F 2 "" V 5825 1500 50  0001 C CNN
-F 3 "" V 5825 1500 50  0001 C CNN
+F 3 "http://www.puiaudio.com/pdf/AT-1220-TT-9-R.pdf" V 5825 1500 50  0001 C CNN
 	1    8450 6100
 	1    0    0    -1  
 $EndComp
@@ -342,7 +343,7 @@ L MAX17043 IC?
 U 1 1 58B0E031
 P 5150 1500
 F 0 "IC?" H 5150 1027 50  0000 C CNN
-F 1 "MAX17043" H 5150 936 50  0000 C CNN
+F 1 "MAX17044" H 5150 936 50  0000 C CNN
 F 2 "" H -2600 -250 60  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -2600 -250 60  0001 C CNN
 	1    5150 1500
@@ -817,4 +818,13 @@ Wire Wire Line
 	5250 2700 4750 2700
 Wire Notes Line
 	7150 2600 7150 2950
+Text GLabel 4250 6950 0    60   Input ~ 0
+GND
+Wire Wire Line
+	4550 6950 4250 6950
+Wire Notes Line
+	9850 4300 9850 4650
+Connection ~ 4450 6950
+Text Notes 1350 3100 0    60   ~ 0
+Battery charger
 $EndSCHEMATC

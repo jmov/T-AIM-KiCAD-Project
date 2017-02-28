@@ -1,4 +1,4 @@
-update=la 25. helmikuuta 2017 11.30.10
+update=ti 28. helmikuuta 2017 14.50.54
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../../../sch/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=library
@@ -117,13 +127,4 @@ LibName85=transf
 LibName86=triac_thyristor
 LibName87=ttl_ieee
 LibName88=library/kicad-parts/libraries/maxium
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=../../../sch/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
+LibName89=SparkFun
