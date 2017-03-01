@@ -611,8 +611,8 @@ Text GLabel 5600 6450 0    60   Input ~ 0
 GND
 Text Notes 3650 3150 0    60   ~ 0
 Battery charger
-Text Notes 800  2700 0    60   ~ 0
-Notes:\n- I added battery charger to schematics, resistor values not still set\n- Easier to find suitable low voltage batteries, here 4.2V\n- If charger is used, then its output is used as VCC?\n- Battery monitoring goes straight to battery header, I guess\n- Link to charger datasheet in component's properties\n- AC (confusingly named, it means a DC charger input) could be left out\n- Charger provides more controllable parameters in addition to battery monitor\n- BattStat1/2 signals could be directed to USB messages instead of LEDs\n- Charger is only a suggestion, I am going to do this anyway some day :)
+Text Notes 500  2950 0    60   ~ 0
+Notes:\n- I added battery charger to schematics, resistor values not still set\n- Easier to find suitable low voltage batteries, here 4.2V\n- If charger is used, then its output is used as VCC?\n- Battery monitoring goes straight to battery header, I guess\n- Link to charger datasheet in component's properties\n- AC (confusingly named, it means a DC charger input) could be left out\n- Charger provides more controllable parameters in addition to battery monitor\n- BattStat1/2 signals could be directed to USB messages instead of LEDs\n- Yes this is messy and getting messier: when buying a 4.2V LiPo cell,\n  we have to add a NTC resistor to follow battery temperature. Then,\n  of course, an extra wire has to be added and therefore a 3-wire JTS\n  connector\n- Charger is only a suggestion, I am going to do this anyway some day :)
 $Comp
 L BARREL_JACK J?
 U 1 1 58B6B477
