@@ -88,6 +88,7 @@ LIBS:triac_thyristor
 LIBS:ttl_ieee
 LIBS:maxium
 LIBS:SparkFun
+LIBS:tm-kicad-lib
 LIBS:T-AIM-cache
 EELAYER 26 0
 EELAYER END
@@ -103,15 +104,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 7300 4450
-NoConn ~ 7300 4750
-NoConn ~ 7300 4850
-NoConn ~ 7300 4950
-NoConn ~ 4700 5850
-NoConn ~ 4700 5750
-NoConn ~ 4700 4050
-NoConn ~ 7300 5650
-NoConn ~ 7300 4650
+NoConn ~ 7500 4150
+NoConn ~ 7500 4450
+NoConn ~ 7500 4550
+NoConn ~ 7500 4650
+NoConn ~ 4900 5550
+NoConn ~ 4900 5450
+NoConn ~ 4900 3750
+NoConn ~ 7500 5350
+NoConn ~ 7500 4350
 $Comp
 L CONN_01X08 J?
 U 1 1 58B048C2
@@ -126,34 +127,34 @@ $EndComp
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 58B04C98
-P 1350 850
-F 0 "#FLG01" H -1000 -1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 1350 1024 50  0000 C CNN
-F 2 "" H -1000 -1550 50  0001 C CNN
-F 3 "" H -1000 -1550 50  0001 C CNN
-	1    1350 850 
+P 1350 950
+F 0 "#FLG01" H -1000 -1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1124 50  0000 C CNN
+F 2 "" H -1000 -1450 50  0001 C CNN
+F 3 "" H -1000 -1450 50  0001 C CNN
+	1    1350 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG02
 U 1 1 58B04CE2
-P 2200 850
-F 0 "#FLG02" H 1000 -175 50  0001 C CNN
-F 1 "PWR_FLAG" H 2200 1024 50  0000 C CNN
-F 2 "" H 1000 -250 50  0001 C CNN
-F 3 "" H 1000 -250 50  0001 C CNN
-	1    2200 850 
+P 2200 950
+F 0 "#FLG02" H 1000 -75 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 1124 50  0000 C CNN
+F 2 "" H 1000 -150 50  0001 C CNN
+F 3 "" H 1000 -150 50  0001 C CNN
+	1    2200 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR03
 U 1 1 58B04D9A
-P 2200 1500
-F 0 "#PWR03" H 150 200 50  0001 C CNN
-F 1 "GND" H 2205 1327 50  0000 C CNN
-F 2 "" H 150 450 50  0001 C CNN
-F 3 "" H 150 450 50  0001 C CNN
-	1    2200 1500
+P 2200 1600
+F 0 "#PWR03" H 150 300 50  0001 C CNN
+F 1 "GND" H 2205 1427 50  0000 C CNN
+F 2 "" H 150 550 50  0001 C CNN
+F 3 "" H 150 550 50  0001 C CNN
+	1    2200 1600
 	1    0    0    -1  
 $EndComp
 Text GLabel 9400 2500 0    60   Input ~ 0
@@ -232,9 +233,9 @@ F 3 "" H 5050 -200 50  0001 C CNN
 	1    9400 4500
 	-1   0    0    1   
 $EndComp
-Text GLabel 7300 5750 2    60   Input ~ 0
+Text GLabel 7500 5450 2    60   Input ~ 0
 RedLED
-Text GLabel 7300 5850 2    60   Input ~ 0
+Text GLabel 7500 5550 2    60   Input ~ 0
 BlueLED
 $Comp
 L R R?
@@ -264,7 +265,7 @@ Text GLabel 9150 4200 0    60   Input ~ 0
 RedLED
 Text GLabel 9150 4500 0    60   Input ~ 0
 BlueLED
-Text GLabel 7300 5950 2    60   Input ~ 0
+Text GLabel 7500 5650 2    60   Input ~ 0
 AlarmBuzzer
 Text GLabel 9100 5900 0    60   Input ~ 0
 AlarmBuzzer
@@ -281,27 +282,27 @@ F 3 "" H 1000 -2050 50  0001 C CNN
 $EndComp
 Text GLabel 9750 1850 2    60   Input ~ 0
 GND
-Text GLabel 7300 5250 2    60   Input ~ 0
+Text GLabel 7500 4950 2    60   Input ~ 0
 RstBtn
 Text GLabel 9350 1750 0    60   Input ~ 0
 RstBtn
-Text GLabel 7300 3750 2    60   Input ~ 0
+Text GLabel 7500 3450 2    60   Input ~ 0
 ConBtn
 Text GLabel 9350 1150 0    60   Input ~ 0
 ConBtn
-Text GLabel 7300 4350 2    60   Input ~ 0
+Text GLabel 7500 4050 2    60   Input ~ 0
 PIR_OUT
 Entry Wire Line
 	8300 2700 8400 2800
 Entry Wire Line
 	8300 2800 8400 2900
 Entry Wire Line
-	8200 5050 8300 5150
+	8200 4750 8300 4850
 Entry Wire Line
-	8200 5150 8300 5250
-Text Label 8100 1200 2    60   ~ 0
+	8200 4850 8300 4950
+Text Label 8100 1450 2    60   ~ 0
 SDA
-Text Label 8100 1300 2    60   ~ 0
+Text Label 8100 1550 2    60   ~ 0
 SCL
 Text Label 8650 2800 2    60   ~ 0
 SDA
@@ -310,46 +311,42 @@ SCL
 $Comp
 L R R?
 U 1 1 58B0DAA3
-P 7800 4800
-F 0 "R?" H 7870 4846 50  0000 L CNN
-F 1 "R" H 7870 4755 50  0000 L CNN
-F 2 "" V -20 750 50  0001 C CNN
-F 3 "" H 50  750 50  0001 C CNN
-	1    7800 4800
+P 7900 4500
+F 0 "R?" H 7970 4546 50  0000 L CNN
+F 1 "R" H 7970 4455 50  0000 L CNN
+F 2 "" V 80  450 50  0001 C CNN
+F 3 "" H 150 450 50  0001 C CNN
+	1    7900 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 58B0DB71
-P 8050 4800
-F 0 "R?" H 8120 4846 50  0000 L CNN
-F 1 "R" H 8120 4755 50  0000 L CNN
-F 2 "" V 230 750 50  0001 C CNN
-F 3 "" H 300 750 50  0001 C CNN
-	1    8050 4800
+P 8150 4500
+F 0 "R?" H 8220 4546 50  0000 L CNN
+F 1 "R" H 8220 4455 50  0000 L CNN
+F 2 "" V 330 450 50  0001 C CNN
+F 3 "" H 400 450 50  0001 C CNN
+	1    8150 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8050 4650 1    60   Input ~ 0
-5V
-Text GLabel 7800 4650 1    60   Input ~ 0
-5V
 $Comp
 L MAX17043 IC?
 U 1 1 58B0E031
-P 6400 1400
-F 0 "IC?" H 6400 927 50  0000 C CNN
-F 1 "MAX17044" H 6400 836 50  0000 C CNN
-F 2 "" H -1350 -350 60  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -1350 -350 60  0001 C CNN
-	1    6400 1400
+P 6400 1650
+F 0 "IC?" H 6400 1177 50  0000 C CNN
+F 1 "MAX17044" H 6400 1086 50  0000 C CNN
+F 2 "" H -1350 -100 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -1350 -100 60  0001 C CNN
+	1    6400 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4800 1600 0    60   Input ~ 0
+Text GLabel 4800 1850 0    60   Input ~ 0
 GND
 Entry Wire Line
-	8200 1200 8300 1300
+	8200 1450 8300 1550
 Entry Wire Line
-	8200 1300 8300 1400
+	8200 1550 8300 1650
 $Comp
 L R R?
 U 1 1 58B0F9D2
@@ -364,9 +361,9 @@ $EndComp
 Text GLabel 10050 1050 2    60   Input ~ 0
 GND
 Text GLabel 10050 1650 2    60   Input ~ 0
-5V
+3V3
 Text GLabel 9750 1250 2    60   Input ~ 0
-5V
+3V3
 $Comp
 L CONN_01X06 J?
 U 1 1 58B0FE75
@@ -383,57 +380,24 @@ BL_TXD
 Text GLabel 9650 5400 0    60   Input ~ 0
 BL_RXD
 Text GLabel 8800 2400 0    60   Input ~ 0
-5V
+3V3
 Text GLabel 8750 2100 0    60   Input ~ 0
 GND
-Text GLabel 7300 5550 2    60   Input ~ 0
+Text GLabel 7500 5250 2    60   Input ~ 0
 BL_TXD
-Text GLabel 7300 5450 2    60   Input ~ 0
+Text GLabel 7500 5150 2    60   Input ~ 0
 BL_RXD
 Text Notes 7400 7500 0    60   ~ 0
 Theft-Aware Internet of Things Multi-Sensor
-Text GLabel 1150 1200 0    60   Input ~ 0
-VBAT
-Text GLabel 2000 1200 0    60   Input ~ 0
+Text GLabel 1150 1300 0    60   Input ~ 0
+3V7
+Text GLabel 2000 1300 0    60   Input ~ 0
 GND
-Text GLabel 4800 800  0    60   Input ~ 0
-VBAT
-$Comp
-L LM7805 U?
-U 1 1 58B3028D
-P 5600 2500
-F 0 "U?" H 5600 2815 50  0000 C CNN
-F 1 "LM7805" H 5600 2724 50  0000 C CNN
-F 2 "" H 2700 350 50  0001 C CNN
-F 3 "https://www.fairchildsemi.com/datasheets/LM/LM7805.pdf" H 2700 350 50  0001 C CNN
-	1    5600 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58B30515
-P 6000 2650
-F 0 "C?" H 6115 2696 50  0000 L CNN
-F 1 "0.1u" H 6115 2605 50  0000 L CNN
-F 2 "" H 3088 50  50  0001 C CNN
-F 3 "" H 3050 200 50  0001 C CNN
-	1    6000 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58B30EF2
-P 5000 2650
-F 0 "C?" H 5115 2696 50  0000 L CNN
-F 1 "0.33u" H 5115 2605 50  0000 L CNN
-F 2 "" H 2088 50  50  0001 C CNN
-F 3 "" H 2050 200 50  0001 C CNN
-	1    5000 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 4850 2850 0    60   Input ~ 0
+Text GLabel 4800 1000 0    60   Input ~ 0
+3V7
+Text GLabel 800  7000 0    60   Input ~ 0
 GND
-Text GLabel 4850 2450 0    60   Input ~ 0
+Text GLabel 800  6150 0    60   Input ~ 0
 VCC
 $Comp
 L R R?
@@ -459,80 +423,80 @@ F 3 "" H 5950 -200 50  0001 C CNN
 $EndComp
 NoConn ~ 9400 5000
 NoConn ~ 9400 5500
-NoConn ~ 7300 6050
-NoConn ~ 7300 6150
+NoConn ~ 7500 5750
+NoConn ~ 7500 5850
 $Comp
 L R R?
 U 1 1 58B48F37
-P 7150 950
-F 0 "R?" H 7220 996 50  0000 L CNN
-F 1 "4.7k" H 7220 905 50  0000 L CNN
-F 2 "" V 1830 -800 50  0001 C CNN
-F 3 "" H 1900 -800 50  0001 C CNN
-	1    7150 950 
+P 7150 1200
+F 0 "R?" H 7220 1246 50  0000 L CNN
+F 1 "4.7k" H 7220 1155 50  0000 L CNN
+F 2 "" V 1830 -550 50  0001 C CNN
+F 3 "" H 1900 -550 50  0001 C CNN
+	1    7150 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 58B4901D
-P 4950 1050
-F 0 "R?" H 5020 1096 50  0000 L CNN
-F 1 "1k" H 5020 1005 50  0000 L CNN
-F 2 "" V -370 -700 50  0001 C CNN
-F 3 "" H -300 -700 50  0001 C CNN
-	1    4950 1050
+P 4950 1300
+F 0 "R?" H 5020 1346 50  0000 L CNN
+F 1 "1k" H 5020 1255 50  0000 L CNN
+F 2 "" V -370 -450 50  0001 C CNN
+F 3 "" H -300 -450 50  0001 C CNN
+	1    4950 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 58B4905F
-P 5350 1050
-F 0 "R?" H 5420 1096 50  0000 L CNN
-F 1 "150" H 5420 1005 50  0000 L CNN
-F 2 "" V 30  -700 50  0001 C CNN
-F 3 "" H 100 -700 50  0001 C CNN
-	1    5350 1050
+P 5350 1300
+F 0 "R?" H 5420 1346 50  0000 L CNN
+F 1 "150" H 5420 1255 50  0000 L CNN
+F 2 "" V 30  -450 50  0001 C CNN
+F 3 "" H 100 -450 50  0001 C CNN
+	1    5350 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L CP1 C?
 U 1 1 58B492DF
-P 5350 1450
-F 0 "C?" H 5465 1496 50  0000 L CNN
-F 1 "10n" H 5465 1405 50  0000 L CNN
-F 2 "" H 450 300 50  0001 C CNN
-F 3 "" H 450 300 50  0001 C CNN
-	1    5350 1450
+P 5350 1700
+F 0 "C?" H 5465 1746 50  0000 L CNN
+F 1 "10n" H 5465 1655 50  0000 L CNN
+F 2 "" H 450 550 50  0001 C CNN
+F 3 "" H 450 550 50  0001 C CNN
+	1    5350 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L ATMEGA328PB-A IC1
 U 1 1 589F3C1F
-P 6000 4950
-F 0 "IC1" H 5600 6425 50  0000 R BNN
-F 1 "ATMEGA328PB-A" H 5600 6350 50  0000 R BNN
-F 2 "Housings_QFP:LQFP-32_5x5mm_Pitch0.5mm" H 5950 3550 50  0001 L CIN
-F 3 "http://www.atmel.com/Images/Atmel-42397-8-bit-AVR-Microcontroller-ATmega328PB_Datasheet.pdf" H 5700 5000 50  0001 C CNN
-	1    6000 4950
+P 6200 4650
+F 0 "IC1" H 5800 6125 50  0000 R BNN
+F 1 "ATMEGA328PB-A" H 5800 6050 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-32_5x5mm_Pitch0.5mm" H 6150 3250 50  0001 L CIN
+F 3 "http://www.atmel.com/Images/Atmel-42397-8-bit-AVR-Microcontroller-ATmega328PB_Datasheet.pdf" H 5900 4700 50  0001 C CNN
+	1    6200 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 7250 1400 2    60   Input ~ 0
+Text GLabel 7250 1650 2    60   Input ~ 0
 FuelGaugeRestart
-Text GLabel 7250 1500 2    60   Input ~ 0
+Text GLabel 7250 1750 2    60   Input ~ 0
 BatteryLowAlert
 $Comp
 L CP1 C?
 U 1 1 58B4925D
-P 4950 1450
-F 0 "C?" H 5065 1496 50  0000 L CNN
-F 1 "1u" H 5065 1405 50  0000 L CNN
-F 2 "" H 50  300 50  0001 C CNN
-F 3 "" H 50  300 50  0001 C CNN
-	1    4950 1450
+P 4950 1700
+F 0 "C?" H 5065 1746 50  0000 L CNN
+F 1 "1u" H 5065 1655 50  0000 L CNN
+F 2 "" H 50  550 50  0001 C CNN
+F 3 "" H 50  550 50  0001 C CNN
+	1    4950 1700
 	1    0    0    -1  
 $EndComp
 Text GLabel 8750 3050 0    60   Input ~ 0
-5V
+3V3
 Text GLabel 8750 3350 0    60   Input ~ 0
 GND
 $Comp
@@ -568,7 +532,7 @@ $EndComp
 Text GLabel 8750 5300 0    60   Input ~ 0
 GND
 Text GLabel 8800 5000 0    60   Input ~ 0
-5V
+3V3
 Text Notes 10200 4850 0    60   ~ 0
 Bluetooth Module
 Text Notes 10200 750  0    60   ~ 0
@@ -579,82 +543,82 @@ Text Notes 10400 5800 0    60   ~ 0
 Alarm buzzer
 Text Notes 7450 750  0    60   ~ 0
 Battery fuel gauge
-Text Notes 7450 2350 0    60   ~ 0
+Text Notes 3600 5700 0    60   ~ 0
 Voltage regulator
 $Comp
 L C C?
 U 1 1 58B54339
-P 5200 3250
-F 0 "C?" H 5315 3296 50  0000 L CNN
-F 1 "0.1u" H 5315 3205 50  0000 L CNN
-F 2 "" H 2288 650 50  0001 C CNN
-F 3 "" H 2250 800 50  0001 C CNN
-	1    5200 3250
+P 5550 3000
+F 0 "C?" H 5665 3046 50  0000 L CNN
+F 1 "0.1u" H 5665 2955 50  0000 L CNN
+F 2 "" H 2638 400 50  0001 C CNN
+F 3 "" H 2600 550 50  0001 C CNN
+	1    5550 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L CP1 C?
 U 1 1 58B54435
-P 4800 3250
-F 0 "C?" H 4915 3296 50  0000 L CNN
-F 1 "10uf" H 4915 3205 50  0000 L CNN
-F 2 "" H -100 2100 50  0001 C CNN
-F 3 "" H -100 2100 50  0001 C CNN
-	1    4800 3250
+P 5150 3000
+F 0 "C?" H 5265 3046 50  0000 L CNN
+F 1 "10uf" H 5265 2955 50  0000 L CNN
+F 2 "" H 250 1850 50  0001 C CNN
+F 3 "" H 250 1850 50  0001 C CNN
+	1    5150 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 3400 0    60   Input ~ 0
+Text GLabel 5000 3150 0    60   Input ~ 0
 GND
-NoConn ~ 4700 5550
-NoConn ~ 4700 5650
-Text GLabel 5600 6450 0    60   Input ~ 0
+NoConn ~ 4900 5250
+NoConn ~ 4900 5350
+Text GLabel 5850 6150 0    60   Input ~ 0
 GND
-Text Notes 3650 3150 0    60   ~ 0
+Text Notes 3650 2500 0    60   ~ 0
 Battery charger
-Text Notes 500  2950 0    60   ~ 0
-Notes:\n- I added battery charger to schematics, resistor values not still set\n- Easier to find suitable low voltage batteries, here 4.2V\n- If charger is used, then its output is used as VCC?\n- Battery monitoring goes straight to battery header, I guess\n- Link to charger datasheet in component's properties\n- AC (confusingly named, it means a DC charger input) could be left out\n- Charger provides more controllable parameters in addition to battery monitor\n- BattStat1/2 signals could be directed to USB messages instead of LEDs\n- Yes this is messy and getting messier: when buying a 4.2V LiPo cell,\n  we have to add a NTC resistor to follow battery temperature. Then,\n  of course, an extra wire has to be added and therefore a 3-wire JTS\n  connector\n- Charger is only a suggestion, I am going to do this anyway some day :)
+Text Notes 650  2100 0    60   ~ 0
+Notes:\n- I added battery charger to schematics, resistor values not still set\n- Easier to find suitable low voltage batteries, here 3.7V\n- If charger is used, then its output is used as VCC?\n- Battery monitoring goes straight to battery header, I guess\n- Link to charger datasheet in component's properties\n- AC (confusingly named, it means a DC charger input) could be left out\n- Charger provides more controllable parameters in addition to battery monitor\n- BattStat1/2 signals could be directed to USB messages instead of LEDs\n- Yes this is messy and getting messier: when buying a 3.7V LiPo cell,\n  we have to add a NTC resistor to follow battery temperature. Then,\n  of course, an extra wire has to be added and therefore a 3-wire JTS\n  connector\n- Charger is only a suggestion, I am going to do this anyway some day :)
 $Comp
 L BARREL_JACK J?
 U 1 1 58B6B477
-P 950 4700
-F 0 "J?" H 931 5025 50  0000 C CNN
-F 1 "BARREL_JACK" H 931 4934 50  0000 C CNN
-F 2 "" H -1000 850 50  0001 C CNN
-F 3 "" H -1000 850 50  0001 C CNN
-	1    950  4700
+P 900 4000
+F 0 "J?" H 881 4325 50  0000 C CNN
+F 1 "BARREL_JACK" H 881 4234 50  0000 C CNN
+F 2 "" H -1050 150 50  0001 C CNN
+F 3 "" H -1050 150 50  0001 C CNN
+	1    900  4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L USBmicro J?
 U 1 1 58B6B69F
-P 1050 3900
-F 0 "J?" H 1001 4241 60  0000 C CNN
-F 1 "USBmicro" V 200 -500 60  0001 C CNN
-F 2 "" H 550 -500 60  0001 C CNN
-F 3 "" H 550 -500 60  0001 C CNN
-	1    1050 3900
+P 1000 3200
+F 0 "J?" H 951 3541 60  0000 C CNN
+F 1 "USBmicro" V 150 -1200 60  0001 C CNN
+F 2 "" H 500 -1200 60  0001 C CNN
+F 3 "" H 500 -1200 60  0001 C CNN
+	1    1000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L CP1 C?
 U 1 1 58B6C09A
-P 1650 3900
-F 0 "C?" H 1765 3946 50  0000 L CNN
-F 1 "10uf" H 1765 3855 50  0000 L CNN
-F 2 "" H -3250 2750 50  0001 C CNN
-F 3 "" H -3250 2750 50  0001 C CNN
-	1    1650 3900
+P 1650 3200
+F 0 "C?" H 1765 3246 50  0000 L CNN
+F 1 "10uf" H 1765 3155 50  0000 L CNN
+F 2 "" H -3250 2050 50  0001 C CNN
+F 3 "" H -3250 2050 50  0001 C CNN
+	1    1650 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X01_MALE J?
 U 1 1 58B6CD53
-P 950 3400
-F 0 "J?" V 1010 3452 50  0000 L CNN
-F 1 "3.3V" V 1101 3452 50  0000 L CNN
-F 2 "" H -1300 -450 50  0001 C CNN
-F 3 "" H -1300 -450 50  0001 C CNN
-	1    950  3400
+P 900 2700
+F 0 "J?" V 960 2752 50  0000 L CNN
+F 1 "3.3V" V 1051 2752 50  0000 L CNN
+F 2 "" H -1350 -1150 50  0001 C CNN
+F 3 "" H -1350 -1150 50  0001 C CNN
+	1    900  2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -705,129 +669,284 @@ F 3 "" H 900 -100 50  0001 C CNN
 $EndComp
 Text GLabel 9150 3600 0    60   Input ~ 0
 BatStat1
-Text GLabel 2400 4500 0    60   Input ~ 0
+Text GLabel 2400 3800 0    60   Input ~ 0
 BatStat2
-Text GLabel 2400 4400 0    60   Input ~ 0
+Text GLabel 2400 3700 0    60   Input ~ 0
 BatStat1
-Text GLabel 1400 5900 0    60   Input ~ 0
+Text GLabel 1650 5250 3    60   Input ~ 0
 GND
-Text GLabel 2400 5100 0    60   Input ~ 0
+Text GLabel 2400 4400 0    60   Input ~ 0
 ChargeEN
-Text GLabel 2400 5000 0    60   Input ~ 0
+Text GLabel 2400 4300 0    60   Input ~ 0
 USB/AC
 $Comp
 L R R?
 U 1 1 58B76CE6
-P 2850 5450
-F 0 "R?" V 2643 5450 50  0000 C CNN
-F 1 "RSET?" V 2734 5450 50  0000 C CNN
-F 2 "" V -6120 1750 50  0001 C CNN
-F 3 "" H -6050 1750 50  0001 C CNN
-	1    2850 5450
+P 2850 4750
+F 0 "R?" V 2643 4750 50  0000 C CNN
+F 1 "RSET?" V 2734 4750 50  0000 C CNN
+F 2 "" V -6120 1050 50  0001 C CNN
+F 3 "" H -6050 1050 50  0001 C CNN
+	1    2850 4750
 	1    0    0    1   
 $EndComp
-Text GLabel 2400 4900 0    60   Input ~ 0
+Text GLabel 2400 4200 0    60   Input ~ 0
 USB_CUR
-Text Label 7550 5050 2    60   ~ 0
+Text Label 7750 4750 2    60   ~ 0
 SDA
-Text Label 7550 5150 2    60   ~ 0
+Text Label 7750 4850 2    60   ~ 0
 SCL
 $Comp
 L CP1 C?
 U 1 1 58B7B12A
-P 1750 5400
-F 0 "C?" H 1865 5446 50  0000 L CNN
-F 1 "10u" H 1865 5355 50  0000 L CNN
-F 2 "" H -3150 4250 50  0001 C CNN
-F 3 "" H -3150 4250 50  0001 C CNN
-	1    1750 5400
+P 1750 4700
+F 0 "C?" H 1865 4746 50  0000 L CNN
+F 1 "10u" H 1865 4655 50  0000 L CNN
+F 2 "" H -3150 3550 50  0001 C CNN
+F 3 "" H -3150 3550 50  0001 C CNN
+	1    1750 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L M03JST-PTH JP?
+U 1 1 58B7D3D7
+P 900 4700
+F 0 "JP?" H 1006 5065 50  0000 C CNN
+F 1 "M03JST-PTH" H 1006 4974 50  0000 C CNN
+F 2 "SparkFun-JST-3-PTH" H -900 850 50  0001 C CNN
+F 3 "" H -900 700 60  0001 C CNN
+	1    900  4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 4700 2    60   Input ~ 0
+GND
+Text GLabel 1200 4600 2    60   Input ~ 0
+TEMP
+NoConn ~ 1200 3100
+NoConn ~ 1200 3200
+NoConn ~ 1200 3300
+$Comp
+L CP1 C?
+U 1 1 58B921F8
+P 2150 4700
+F 0 "C?" H 2265 4746 50  0000 L CNN
+F 1 "1u" H 2265 4655 50  0000 L CNN
+F 2 "" H -2750 3550 50  0001 C CNN
+F 3 "" H -2750 3550 50  0001 C CNN
+	1    2150 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 4400 2    60   Input ~ 0
+USBGOOD
+Text GLabel 3400 4300 2    60   Input ~ 0
+ACGOOD
+$Comp
+L CP1 C?
+U 1 1 58B98E8E
+P 1900 2850
+F 0 "C?" H 2015 2896 50  0000 L CNN
+F 1 "10uf" H 2015 2805 50  0000 L CNN
+F 2 "" H -3000 1700 50  0001 C CNN
+F 3 "" H -3000 1700 50  0001 C CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 3700 2    60   Input ~ 0
+TEMP
+$Comp
+L R R?
+U 1 1 58BA4E2C
+P 3900 4050
+F 0 "R?" H 3970 4096 50  0000 L CNN
+F 1 "R" H 3970 4005 50  0000 L CNN
+F 2 "" V 530 -650 50  0001 C CNN
+F 3 "" H 600 -650 50  0001 C CNN
+	1    3900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L BQ2403X U?
+U 1 1 58B69C95
+P 2900 4050
+F 0 "U?" H 2900 4778 50  0000 C CNN
+F 1 "BQ2403X" H 2900 4687 50  0000 C CNN
+F 2 "" H 150 -1100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq24030.pdf" H 100 -350 50  0001 C CNN
+	1    2900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58BB8B5F
+P 4250 4050
+F 0 "R?" H 4320 4096 50  0000 L CNN
+F 1 "R" H 4320 4005 50  0000 L CNN
+F 2 "" V 880 -650 50  0001 C CNN
+F 3 "" H 950 -650 50  0001 C CNN
+	1    4250 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 4350 3    60   Input ~ 0
+GND
+Text GLabel 1200 4800 2    60   Input ~ 0
+3V7
+Text GLabel 3550 4000 2    60   Input ~ 0
+VCC
+Text GLabel 7500 3550 2    60   Input ~ 0
+ChargeEN
+Text GLabel 7500 3650 2    60   Input ~ 0
+USB/AC
+Text GLabel 7500 3750 2    60   Input ~ 0
+USB_CUR
+Text GLabel 7500 3950 2    60   Input ~ 0
+USBGOOD
+Text GLabel 7500 3850 2    60   Input ~ 0
+ACGOOD
+Text Notes 950  2450 0    60   ~ 0
+Connectors
+Text Notes 7950 2500 0    60   ~ 0
+MCU
+$Comp
+L TPS6303X U?
+U 1 1 58C414D3
+P 2450 6350
+F 0 "U?" H 3191 6328 60  0000 L CNN
+F 1 "TPS6303X" H 3191 6222 60  0000 L CNN
+F 2 "" H -1150 2800 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63030.pdf" H 3191 6169 60  0001 L CNN
+	1    2450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 58C41689
+P 2450 5850
+F 0 "L?" V 2640 5850 50  0000 C CNN
+F 1 "1.5u" V 2549 5850 50  0000 C CNN
+F 2 "" H 3350 3600 50  0001 C CNN
+F 3 "" H 3350 3600 50  0001 C CNN
+	1    2450 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 58C4B890
+P 1300 6400
+F 0 "C?" H 1415 6446 50  0000 L CNN
+F 1 "0.1u" H 1415 6355 50  0000 L CNN
+F 2 "" H -3812 3750 50  0001 C CNN
+F 3 "" H -3850 3900 50  0001 C CNN
+	1    1300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58C4BBB9
+P 900 6400
+F 0 "C?" H 1015 6446 50  0000 L CNN
+F 1 "10u" H 1015 6355 50  0000 L CNN
+F 2 "" H -4212 3750 50  0001 C CNN
+F 3 "" H -4250 3900 50  0001 C CNN
+	1    900  6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58C4D4DC
+P 3700 6400
+F 0 "C?" H 3815 6446 50  0000 L CNN
+F 1 "10u" H 3815 6355 50  0000 L CNN
+F 2 "" H -1412 3750 50  0001 C CNN
+F 3 "" H -1450 3900 50  0001 C CNN
+	1    3700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58C508C6
+P 4050 6400
+F 0 "C?" H 4165 6446 50  0000 L CNN
+F 1 "10u" H 4165 6355 50  0000 L CNN
+F 2 "" H -1062 3750 50  0001 C CNN
+F 3 "" H -1100 3900 50  0001 C CNN
+	1    4050 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4200 6250 2    60   Input ~ 0
+3V3
+Text GLabel 6250 2850 2    60   Input ~ 0
+3V3
+Text GLabel 7900 4350 1    60   Input ~ 0
+3V3
+Text GLabel 8150 4350 1    60   Input ~ 0
+3V3
 Wire Wire Line
 	8400 2900 9400 2900
 Wire Wire Line
-	7300 5050 8200 5050
+	7500 4750 8200 4750
 Wire Wire Line
-	7300 5150 8200 5150
+	7500 4850 8200 4850
 Wire Wire Line
 	8400 2800 9400 2800
 Wire Bus Line
-	8300 1200 8300 5350
+	8300 1450 8300 5000
 Wire Bus Line
 	8300 4100 8300 4200
 Wire Wire Line
-	8050 4950 8050 5150
-Connection ~ 8050 5150
+	8150 4650 8150 4850
+Connection ~ 8150 4850
 Wire Wire Line
-	7800 5050 7800 5050
-Connection ~ 7800 5050
+	7900 4750 7900 4750
+Connection ~ 7900 4750
 Wire Wire Line
-	1350 850  1350 1500
+	1350 950  1350 1600
 Wire Wire Line
-	1350 1200 1150 1200
-Connection ~ 1350 1200
+	1350 1300 1150 1300
+Connection ~ 1350 1300
 Wire Wire Line
-	2200 850  2200 1500
+	2200 950  2200 1600
 Wire Wire Line
-	2200 1200 2000 1200
-Connection ~ 2200 1200
-Connection ~ 6000 2450
+	2200 1300 2000 1300
+Connection ~ 2200 1300
 Wire Wire Line
 	9100 5900 9600 5900
 Wire Wire Line
-	5350 1200 5350 1300
+	5350 1450 5350 1550
 Wire Wire Line
-	5350 1200 5650 1200
+	5350 1450 5650 1450
 Wire Wire Line
-	5350 800  5350 900 
+	5350 1000 5350 1150
 Wire Wire Line
-	5650 1300 4950 1300
+	5650 1550 4950 1550
 Wire Wire Line
-	5650 1600 4800 1600
-Connection ~ 4950 1600
+	5650 1850 4800 1850
+Connection ~ 4950 1850
 Wire Wire Line
-	5650 1400 5650 1600
+	5650 1650 5650 1850
 Wire Wire Line
-	5650 1500 5650 1500
-Connection ~ 5650 1500
+	5650 1750 5650 1750
+Connection ~ 5650 1750
 Wire Wire Line
-	4950 900  4950 800 
+	4950 1150 4950 1000
 Wire Wire Line
-	4800 800  7150 800 
-Connection ~ 4950 800 
-Connection ~ 5350 1200
-Connection ~ 5350 1600
+	4800 1000 7150 1000
+Connection ~ 4950 1000
+Connection ~ 5350 1450
+Connection ~ 5350 1850
 Wire Wire Line
-	7150 1400 7250 1400
+	7150 1650 7250 1650
 Wire Wire Line
-	7150 1500 7250 1500
-Connection ~ 7150 1500
+	7150 1750 7250 1750
+Connection ~ 7150 1750
 Wire Wire Line
-	7150 1200 8200 1200
+	7150 1450 8200 1450
 Wire Wire Line
-	7150 1300 8200 1300
-Connection ~ 5350 800 
+	7150 1550 8200 1550
+Connection ~ 5350 1000
 Wire Wire Line
-	7150 1100 7150 1500
+	7150 1350 7150 1750
 Wire Wire Line
-	4950 1300 4950 1200
-Wire Wire Line
-	4850 2450 5200 2450
-Connection ~ 5000 2450
-Wire Wire Line
-	4850 2850 6000 2850
-Wire Wire Line
-	5600 2850 5600 2750
-Connection ~ 5000 2850
-Connection ~ 5600 2850
-Wire Wire Line
-	5000 2500 5000 2450
-Wire Wire Line
-	5000 2800 5000 2850
-Wire Wire Line
-	6000 2500 6000 2450
-Wire Wire Line
-	6000 2850 6000 2800
+	4950 1550 4950 1450
 Wire Wire Line
 	9200 2400 9200 2300
 Wire Wire Line
@@ -899,23 +1018,9 @@ Wire Wire Line
 Wire Wire Line
 	9400 5500 9650 5500
 Wire Notes Line
-	4450 600  11100 600 
-Wire Notes Line
 	11100 600  11100 6500
-Wire Notes Line
-	8400 2150 8400 650 
-Wire Notes Line
-	4450 600  4450 3000
-Wire Notes Line
-	4450 2000 11100 2000
-Wire Notes Line
-	550  3000 8400 3000
 Wire Wire Line
-	4550 3400 5200 3400
-Wire Notes Line
-	8400 600  8400 3150
-Wire Notes Line
-	11100 6500 550  6500
+	5000 3150 5550 3150
 Wire Notes Line
 	8400 3650 8400 6500
 Wire Notes Line
@@ -927,23 +1032,17 @@ Wire Notes Line
 Wire Notes Line
 	8400 3100 8400 3700
 Wire Wire Line
-	4800 3100 6500 3100
+	5150 2850 6250 2850
 Wire Wire Line
-	6500 3100 6500 2450
-Wire Wire Line
-	6500 2450 6000 2450
-Wire Notes Line
-	8400 2600 8400 2950
-Wire Wire Line
-	5600 6450 5900 6450
+	5850 6150 6100 6150
 Wire Notes Line
 	11100 4300 11100 4650
-Connection ~ 5800 6450
+Connection ~ 6000 6150
 Wire Wire Line
-	1250 3700 2950 3700
+	1200 3000 2950 3000
 Wire Wire Line
-	1650 3750 1650 3700
-Connection ~ 1650 3700
+	1650 3050 1650 3000
+Connection ~ 1650 3000
 Wire Wire Line
 	9150 3900 9250 3900
 Wire Wire Line
@@ -957,206 +1056,156 @@ Wire Wire Line
 Wire Wire Line
 	9950 3600 10050 3600
 Wire Wire Line
-	1650 4050 1650 5900
+	1650 3350 1650 5250
 Wire Wire Line
-	1250 4100 1650 4100
-Connection ~ 1650 4600
+	1200 3400 1650 3400
+Connection ~ 1650 3900
 Wire Wire Line
-	2950 5900 2950 5300
+	2950 5200 2950 4600
+Connection ~ 1650 5200
+Connection ~ 2850 5200
 Wire Wire Line
-	1400 5900 2950 5900
-Connection ~ 1650 5900
-Connection ~ 2850 5900
+	1200 4000 1650 4000
 Wire Wire Line
-	1250 4700 1650 4700
+	1200 4100 1650 4100
 Wire Wire Line
-	1250 4800 1650 4800
+	1750 4850 1750 5200
+Connection ~ 1750 5200
 Wire Wire Line
-	1750 5550 1750 5900
-Connection ~ 1750 5900
+	1200 3900 2400 3900
 Wire Wire Line
-	1250 4600 2400 4600
+	1750 3900 1750 4550
 Wire Wire Line
-	1750 4600 1750 5250
+	2950 3000 2950 3500
 Wire Wire Line
-	2950 3700 2950 4200
+	2000 4000 2400 4000
+Wire Wire Line
+	2000 4000 2000 4550
+Connection ~ 2300 4000
+Wire Wire Line
+	2000 4550 2150 4550
+Wire Wire Line
+	2150 5200 2150 4850
+Connection ~ 2150 5200
+Wire Wire Line
+	1200 2700 2850 2700
+Wire Wire Line
+	2850 2700 2850 3500
+Connection ~ 1900 2700
+Wire Wire Line
+	1900 5200 1900 3200
+Connection ~ 1900 5200
+Wire Wire Line
+	5900 2850 5900 3150
+Connection ~ 5900 2850
+Wire Wire Line
+	6100 3150 6100 2850
+Connection ~ 6100 2850
+Wire Wire Line
+	3400 4000 3550 4000
+Wire Wire Line
+	3500 4000 3500 4200
+Wire Wire Line
+	3500 4200 3400 4200
+Wire Wire Line
+	3400 4100 3500 4100
+Connection ~ 3500 4100
+Wire Wire Line
+	2400 4100 2300 4100
+Wire Wire Line
+	2300 4100 2300 4000
+Wire Wire Line
+	3900 4250 4250 4250
+Wire Wire Line
+	4250 4200 4250 4350
+Connection ~ 4250 4250
+Wire Wire Line
+	4250 3800 4250 3900
+Connection ~ 3500 4000
+Wire Wire Line
+	3900 4200 3900 4250
+Connection ~ 1650 3400
+Connection ~ 1650 4000
+Connection ~ 1650 4100
+Connection ~ 1750 3900
+Wire Wire Line
+	2850 5200 2850 4900
+Wire Wire Line
+	7900 4750 7900 4650
+Wire Wire Line
+	2150 5850 2300 5850
+Wire Wire Line
+	2600 5850 2750 5850
+Wire Wire Line
+	800  6150 1650 6150
+Wire Wire Line
+	1650 6250 1650 6650
+Connection ~ 1650 6450
+Wire Wire Line
+	1650 6250 1300 6250
+Wire Wire Line
+	800  7000 4050 7000
+Connection ~ 2350 7000
+Connection ~ 2550 7000
+Wire Wire Line
+	900  6550 900  7000
+Connection ~ 900  7000
+Wire Wire Line
+	1300 6550 1300 7000
+Connection ~ 1300 7000
+Wire Wire Line
+	900  6250 900  6150
+Connection ~ 900  6150
+Wire Wire Line
+	3150 6250 3150 6650
+Wire Wire Line
+	3150 6250 4200 6250
+Connection ~ 3700 6250
+Wire Wire Line
+	3700 7000 3700 6550
+Connection ~ 2650 7000
+Connection ~ 4050 6250
+Wire Wire Line
+	4050 7000 4050 6550
+Connection ~ 3700 7000
+Connection ~ 5550 2850
+Connection ~ 5150 3150
+Wire Wire Line
+	7150 1000 7150 1050
+Wire Wire Line
+	3400 3900 3900 3900
+Wire Wire Line
+	4250 3800 3400 3800
+Wire Notes Line
+	4500 7200 4500 600 
+Wire Notes Line
+	11100 6500 4500 6500
+Wire Notes Line
+	4500 5500 500  5500
+Wire Notes Line
+	500  7200 4500 7200
+Wire Notes Line
+	4500 600  11100 600 
+Wire Notes Line
+	500  7200 500  2300
+Wire Notes Line
+	500  2300 8400 2300
+Wire Notes Line
+	1550 5500 1550 2300
+Connection ~ 1900 3000
+Wire Wire Line
+	1650 5200 2950 5200
 $Comp
-L M03JST-PTH JP?
-U 1 1 58B7D3D7
-P 950 5400
-F 0 "JP?" H 1056 5765 50  0000 C CNN
-F 1 "M03JST-PTH" H 1056 5674 50  0000 C CNN
-F 2 "SparkFun-JST-3-PTH" H -850 1550 50  0001 C CNN
-F 3 "" H -850 1400 60  0001 C CNN
-	1    950  5400
-	1    0    0    -1  
-$EndComp
-Text GLabel 1250 5400 2    60   Input ~ 0
-GND
-Text GLabel 1250 5300 2    60   Input ~ 0
-TEMP
-NoConn ~ 1250 3800
-NoConn ~ 1250 3900
-NoConn ~ 1250 4000
-Wire Wire Line
-	2000 4700 2400 4700
-Wire Wire Line
-	2000 4700 2000 5250
-Connection ~ 2300 4700
-$Comp
-L CP1 C?
-U 1 1 58B921F8
-P 2150 5400
-F 0 "C?" H 2265 5446 50  0000 L CNN
-F 1 "1u" H 2265 5355 50  0000 L CNN
-F 2 "" H -2750 4250 50  0001 C CNN
-F 3 "" H -2750 4250 50  0001 C CNN
-	1    2150 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 5250 2150 5250
-Wire Wire Line
-	2150 5550 2150 5900
-Connection ~ 2150 5900
-Text GLabel 3400 5100 2    60   Input ~ 0
-USBGOOD
-Text GLabel 3400 5000 2    60   Input ~ 0
-ACGOOD
-Wire Wire Line
-	1250 3400 2850 3400
-Wire Wire Line
-	2850 3400 2850 4200
-Connection ~ 1900 3400
-$Comp
-L CP1 C?
-U 1 1 58B98E8E
-P 1900 3550
-F 0 "C?" H 2015 3596 50  0000 L CNN
-F 1 "10uf" H 2015 3505 50  0000 L CNN
-F 2 "" H -3000 2400 50  0001 C CNN
-F 3 "" H -3000 2400 50  0001 C CNN
-	1    1900 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 3900 1900 5900
-Connection ~ 1900 5900
-Text GLabel 3400 4400 2    60   Input ~ 0
-TEMP
-Wire Wire Line
-	5700 3100 5700 3450
-Connection ~ 5700 3100
-Wire Wire Line
-	5900 3450 5900 3100
-Connection ~ 5900 3100
-Wire Wire Line
-	3400 4700 3700 4700
-Wire Wire Line
-	3600 4700 3600 4900
-Wire Wire Line
-	3600 4900 3400 4900
-Wire Wire Line
-	3400 4800 3600 4800
-Connection ~ 3600 4800
-$Comp
-L R R?
-U 1 1 58BA4E2C
-P 4100 4750
-F 0 "R?" H 4170 4796 50  0000 L CNN
-F 1 "R" H 4170 4705 50  0000 L CNN
-F 2 "" V 730 50  50  0001 C CNN
-F 3 "" H 800 50  50  0001 C CNN
-	1    4100 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L BQ2403X U?
-U 1 1 58B69C95
-P 2900 4750
-F 0 "U?" H 2900 5478 50  0000 C CNN
-F 1 "BQ2403X" H 2900 5387 50  0000 C CNN
-F 2 "" H 150 -400 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/bq24030.pdf" H 100 350 50  0001 C CNN
-	1    2900 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 4800 2300 4800
-Wire Wire Line
-	2300 4800 2300 4700
-$Comp
-L R R?
-U 1 1 58BB8B5F
-P 4450 4750
-F 0 "R?" H 4520 4796 50  0000 L CNN
-F 1 "R" H 4520 4705 50  0000 L CNN
-F 2 "" V 1080 50  50  0001 C CNN
-F 3 "" H 1150 50  50  0001 C CNN
-	1    4450 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 4950 4450 4950
-Wire Wire Line
-	4450 4900 4450 5050
-Text GLabel 4450 5050 3    60   Input ~ 0
-GND
-Connection ~ 4450 4950
-Wire Wire Line
-	4450 4500 4450 4600
-Text GLabel 1250 5500 2    60   Input ~ 0
-VBAT
-Text GLabel 3700 4700 2    60   Input ~ 0
-VCC
-Connection ~ 3600 4700
-$Comp
-L +4V2 #PWR?
-U 1 1 58BC607D
-P 1350 1500
-F 0 "#PWR?" H -350 -300 50  0001 C CNN
-F 1 "+4V2" H 1365 1673 50  0000 C CNN
-F 2 "" H -350 -150 50  0001 C CNN
-F 3 "" H -350 -150 50  0001 C CNN
-	1    1350 1500
+L +3V7 #PWR?
+U 1 1 58C743EA
+P 1350 1600
+F 0 "#PWR?" H -250 -350 50  0001 C CNN
+F 1 "+3V7" H 1365 1773 50  0000 C CNN
+F 2 "" H -250 -200 50  0001 C CNN
+F 3 "" H -250 -200 50  0001 C CNN
+	1    1350 1600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3400 4600 4100 4600
-Wire Wire Line
-	4450 4500 3400 4500
-Wire Wire Line
-	4100 4900 4100 4950
-Text GLabel 7300 3850 2    60   Input ~ 0
-ChargeEN
-Text GLabel 7300 3950 2    60   Input ~ 0
-USB/AC
-Text GLabel 7300 4050 2    60   Input ~ 0
-USB_CUR
-Text GLabel 7300 4250 2    60   Input ~ 0
-USBGOOD
-Text GLabel 7300 4150 2    60   Input ~ 0
-ACGOOD
-Connection ~ 1650 4100
-Connection ~ 1650 4700
-Connection ~ 1650 4800
-Connection ~ 1750 4600
-Wire Wire Line
-	2850 5600 2850 5900
 Wire Notes Line
-	1600 3000 1600 6300
-Wire Notes Line
-	550  3000 550  6050
-Text Notes 1050 3150 0    60   ~ 0
-Connectors
-Wire Notes Line
-	4450 6500 4450 2950
-Text Notes 8050 3150 0    60   ~ 0
-MCU
-Wire Wire Line
-	7800 5050 7800 4950
-Wire Notes Line
-	550  6500 550  5950
-Wire Notes Line
-	1600 6050 1600 6500
+	8400 600  8400 3150
 $EndSCHEMATC

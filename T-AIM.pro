@@ -1,4 +1,4 @@
-update=ti 28. helmikuuta 2017 14.50.54
+update=la 11. maaliskuuta 2017 12.50.51
 version=1
 last_client=kicad
 [pcbnew]
@@ -128,3 +128,4 @@ LibName86=triac_thyristor
 LibName87=ttl_ieee
 LibName88=library/kicad-parts/libraries/maxium
 LibName89=SparkFun
+LibName90=library/tm-kicad-library/tm-kicad-lib
