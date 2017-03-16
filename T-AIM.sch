@@ -86,6 +86,7 @@ LIBS:switches
 LIBS:transf
 LIBS:triac_thyristor
 LIBS:ttl_ieee
+LIBS:SparkFun
 LIBS:maxium
 LIBS:T-AIM-cache
 EELAYER 26 0
@@ -93,291 +94,205 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Theft-Aware Internet of Things Multi-Sensor"
 Date ""
 Rev ""
-Comp ""
+Comp "Senior Citizens"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 5950 4350
-NoConn ~ 5950 4450
-NoConn ~ 5950 4550
-NoConn ~ 5950 4650
-NoConn ~ 5950 4750
-NoConn ~ 5950 4950
-NoConn ~ 5950 5250
-NoConn ~ 5950 5350
-NoConn ~ 5950 5450
-NoConn ~ 3350 6350
-NoConn ~ 3350 6250
-NoConn ~ 3350 4550
-NoConn ~ 5950 6150
-NoConn ~ 5950 5150
+NoConn ~ 4850 5150
+NoConn ~ 4850 5250
+NoConn ~ 4850 5850
+NoConn ~ 4850 5950
+NoConn ~ 4850 6050
+NoConn ~ 2250 6950
+NoConn ~ 2250 6850
+NoConn ~ 2250 5150
+NoConn ~ 4850 5750
 $Comp
-L CONN_01X08 J?
-U 1 1 58B048C2
-P 8350 2700
-F 0 "J?" H 8427 2741 50  0000 L CNN
-F 1 "ADXL345 Connector" H 8427 2650 50  0000 L CNN
-F 2 "" H 7250 -1650 50  0001 C CNN
-F 3 "" H 7250 -1650 50  0001 C CNN
-	1    8350 2700
+L PWR_FLAG #FLG01
+U 1 1 58CB4765
+P 900 1050
+F 0 "#FLG01" H -1450 -1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 1224 50  0000 C CNN
+F 2 "" H -1450 -1350 50  0001 C CNN
+F 3 "" H -1450 -1350 50  0001 C CNN
+	1    900  1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG?
-U 1 1 58B04C98
-P 1350 850
-F 0 "#FLG?" H -1000 -1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 1350 1024 50  0000 C CNN
-F 2 "" H -1000 -1550 50  0001 C CNN
-F 3 "" H -1000 -1550 50  0001 C CNN
-	1    1350 850 
+L PWR_FLAG #FLG02
+U 1 1 58CB476B
+P 1350 1050
+F 0 "#FLG02" H 150 25  50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1224 50  0000 C CNN
+F 2 "" H 150 -50 50  0001 C CNN
+F 3 "" H 150 -50 50  0001 C CNN
+	1    1350 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG?
-U 1 1 58B04CE2
-P 2200 850
-F 0 "#FLG?" H 1000 -175 50  0001 C CNN
-F 1 "PWR_FLAG" H 2200 1024 50  0000 C CNN
-F 2 "" H 1000 -250 50  0001 C CNN
-F 3 "" H 1000 -250 50  0001 C CNN
-	1    2200 850 
+L GND #PWR03
+U 1 1 58CB4771
+P 1350 1350
+F 0 "#PWR03" H -700 50  50  0001 C CNN
+F 1 "GND" H 1355 1177 50  0000 C CNN
+F 2 "" H -700 300 50  0001 C CNN
+F 3 "" H -700 300 50  0001 C CNN
+	1    1350 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR?
-U 1 1 58B04D9A
-P 2200 1500
-F 0 "#PWR?" H 150 200 50  0001 C CNN
-F 1 "GND" H 2205 1327 50  0000 C CNN
-F 2 "" H 150 450 50  0001 C CNN
-F 3 "" H 150 450 50  0001 C CNN
-	1    2200 1500
-	1    0    0    -1  
-$EndComp
-Text GLabel 8150 2650 0    60   Input ~ 0
+Text GLabel 7800 2650 0    60   Input ~ 0
 INT1
-Text GLabel 8150 2750 0    60   Input ~ 0
-INT2
-Text GLabel 8150 2850 0    60   Input ~ 0
-SDO
 $Comp
-L CONN_01X03 J?
-U 1 1 58B05616
+L CONN_01X03 J2
+U 1 1 58CB4778
 P 8600 3350
-F 0 "J?" H 8678 3391 50  0000 L CNN
+F 0 "J2" H 8678 3391 50  0000 L CNN
 F 1 "PIR Sensor Connector" H 8678 3300 50  0000 L CNN
-F 2 "" H 6000 -1050 50  0001 C CNN
-F 3 "" H 6000 -1050 50  0001 C CNN
+F 2 "TO_SOT_Packages_THT:TO-5-3" H 6000 -1050 50  0001 C CNN
+F 3 "http://www3.panasonic.biz/ac/e_download/control/sensor/human/catalog/bltn_eng_papirs_final_ekmc_saturn.pdf" H 6000 -1050 50  0001 C CNN
 	1    8600 3350
 	1    0    0    -1  
 $EndComp
 Text GLabel 8400 3350 0    60   Input ~ 0
 PIR_OUT
 $Comp
-L Buzzer BZ?
-U 1 1 58B0587A
+L Buzzer BZ1
+U 1 1 58CB4780
 P 8450 6100
-F 0 "BZ?" H 8603 6129 50  0000 L CNN
+F 0 "BZ1" H 8603 6129 50  0000 L CNN
 F 1 "Alarm Buzzer" H 8603 6038 50  0000 L CNN
-F 2 "" V 5825 1500 50  0001 C CNN
+F 2 "T-AIM:AT-1220-TT-9-R" V 5825 1500 50  0001 C CNN
 F 3 "" V 5825 1500 50  0001 C CNN
 	1    8450 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 7750 6300 0    60   Input ~ 0
-GND
 $Comp
-L SW_Push_SPDT SW?
-U 1 1 58B06F34
-P 8300 1900
-F 0 "SW?" H 8300 2185 50  0000 C CNN
-F 1 "Reset Button" H 8300 2094 50  0000 C CNN
-F 2 "" H 5450 -1150 50  0001 C CNN
-F 3 "" H 5450 -1150 50  0001 C CNN
-	1    8300 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_Push_SPDT SW?
-U 1 1 58B06FFC
-P 8300 1300
-F 0 "SW?" H 8300 1585 50  0000 C CNN
-F 1 "Connected Button" H 8300 1494 50  0000 C CNN
-F 2 "" H 5450 -1750 50  0001 C CNN
-F 3 "" H 5450 -1750 50  0001 C CNN
-	1    8300 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED D?
-U 1 1 58B07DCE
+L LED D1
+U 1 1 58CB4795
 P 7900 3950
-F 0 "D?" H 7891 4166 50  0000 C CNN
+F 0 "D1" H 7891 4166 50  0000 C CNN
 F 1 "Red LED" H 7891 4075 50  0000 C CNN
-F 2 "" H 3550 -750 50  0001 C CNN
-F 3 "" H 3550 -750 50  0001 C CNN
+F 2 "SparkFun-LED:LED-1206" H 3550 -750 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-98-0002/S_110_LTST-C150CKT.pdf" H 3550 -750 50  0001 C CNN
 	1    7900 3950
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D?
-U 1 1 58B07E50
+L LED D2
+U 1 1 58CB479C
 P 7900 4350
-F 0 "D?" H 7891 4566 50  0000 C CNN
+F 0 "D2" H 7891 4566 50  0000 C CNN
 F 1 "Blue LED" H 7891 4475 50  0000 C CNN
-F 2 "" H 3550 -350 50  0001 C CNN
-F 3 "" H 3550 -350 50  0001 C CNN
+F 2 "SparkFun-LED:LED-1206" H 3550 -350 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/S_110_LTST-C150TBKT(0630).pdf" H 3550 -350 50  0001 C CNN
 	1    7900 4350
 	-1   0    0    1   
 $EndComp
-Text GLabel 5950 6250 2    60   Input ~ 0
+Text GLabel 4850 6850 2    60   Input ~ 0
 RedLED
-Text GLabel 5950 6350 2    60   Input ~ 0
+Text GLabel 4850 6950 2    60   Input ~ 0
 BlueLED
 $Comp
-L R R?
-U 1 1 58B08594
+L R R12
+U 1 1 58CB47A5
 P 8300 3950
-F 0 "R?" V 8093 3950 50  0000 C CNN
+F 0 "R12" V 8093 3950 50  0000 C CNN
 F 1 "220" V 8184 3950 50  0000 C CNN
-F 2 "" V -670 250 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -670 250 50  0001 C CNN
 F 3 "" H -600 250 50  0001 C CNN
 	1    8300 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R?
-U 1 1 58B08619
+L R R13
+U 1 1 58CB47AC
 P 8300 4350
-F 0 "R?" V 8093 4350 50  0000 C CNN
+F 0 "R13" V 8093 4350 50  0000 C CNN
 F 1 "220" V 8184 4350 50  0000 C CNN
-F 2 "" V -670 650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -670 650 50  0001 C CNN
 F 3 "" H -600 650 50  0001 C CNN
 	1    8300 4350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8700 4350 2    60   Input ~ 0
-GND
 Text GLabel 7650 3950 0    60   Input ~ 0
 RedLED
 Text GLabel 7650 4350 0    60   Input ~ 0
 BlueLED
-Text GLabel 5950 6450 2    60   Input ~ 0
+Text GLabel 4850 7050 2    60   Input ~ 0
 AlarmBuzzer
 Text GLabel 7850 5900 0    60   Input ~ 0
 AlarmBuzzer
-$Comp
-L R R?
-U 1 1 58B0A245
-P 8650 1800
-F 0 "R?" V 8857 1800 50  0000 C CNN
-F 1 "1k" V 8766 1800 50  0000 C CNN
-F 2 "" V -320 -1900 50  0001 C CNN
-F 3 "" H -250 -1900 50  0001 C CNN
-	1    8650 1800
-	0    -1   -1   0   
-$EndComp
-Text GLabel 8500 2000 2    60   Input ~ 0
-GND
-Text GLabel 5950 5750 2    60   Input ~ 0
+Text GLabel 4850 6350 2    60   Input ~ 0
 ResetButton
-Text GLabel 8100 1900 0    60   Input ~ 0
-ResetButton
-Text GLabel 5950 4250 2    60   Input ~ 0
+Text GLabel 4850 4850 2    60   Input ~ 0
 ConnectedButton
-Text GLabel 8100 1300 0    60   Input ~ 0
-ConnectedButton
-Text GLabel 5950 4850 2    60   Input ~ 0
+Text GLabel 4850 4950 2    60   Input ~ 0
 PIR_OUT
 Entry Wire Line
 	7050 2850 7150 2950
 Entry Wire Line
 	7050 2950 7150 3050
 Entry Wire Line
-	6950 5550 7050 5650
+	6950 6150 7050 6250
 Entry Wire Line
-	6950 5650 7050 5750
-Text Label 6150 4000 2    60   ~ 0
+	6950 6250 7050 6350
+Text Label 5200 6150 2    60   ~ 0
 SDA
-Text Label 6150 4100 2    60   ~ 0
+Text Label 5200 6250 2    60   ~ 0
 SCL
-Text Label 7400 2950 2    60   ~ 0
+Text Label 7450 2950 2    60   ~ 0
 SDA
-Text Label 7400 3050 2    60   ~ 0
+Text Label 7450 3050 2    60   ~ 0
 SCL
 $Comp
-L R R?
-U 1 1 58B0DAA3
-P 6550 5250
-F 0 "R?" H 6620 5296 50  0000 L CNN
-F 1 "R" H 6620 5205 50  0000 L CNN
-F 2 "" V -1270 1200 50  0001 C CNN
-F 3 "" H -1200 1200 50  0001 C CNN
-	1    6550 5250
+L R R9
+U 1 1 58CB47CB
+P 6550 5850
+F 0 "R9" H 6620 5896 50  0000 L CNN
+F 1 "10k" H 6620 5805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -1270 1800 50  0001 C CNN
+F 3 "" H -1200 1800 50  0001 C CNN
+	1    6550 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
-U 1 1 58B0DB71
-P 6750 5250
-F 0 "R?" H 6820 5296 50  0000 L CNN
-F 1 "R" H 6820 5205 50  0000 L CNN
-F 2 "" V -1070 1200 50  0001 C CNN
-F 3 "" H -1000 1200 50  0001 C CNN
-	1    6750 5250
+L R R10
+U 1 1 58CB47D2
+P 6850 5850
+F 0 "R10" H 6920 5896 50  0000 L CNN
+F 1 "10k" H 6920 5805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -970 1800 50  0001 C CNN
+F 3 "" H -900 1800 50  0001 C CNN
+	1    6850 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6750 5100 1    60   Input ~ 0
-5V
-Text GLabel 6550 5100 1    60   Input ~ 0
-5V
 $Comp
-L MAX17043 IC?
-U 1 1 58B0E031
-P 5150 1500
-F 0 "IC?" H 5150 1027 50  0000 C CNN
-F 1 "MAX17043" H 5150 936 50  0000 C CNN
-F 2 "" H -2600 -250 60  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -2600 -250 60  0001 C CNN
-	1    5150 1500
+L MAX17043 IC2
+U 1 1 58CB47D9
+P 5150 1450
+F 0 "IC2" H 5150 977 50  0000 C CNN
+F 1 "MAX17043" H 5150 886 50  0000 C CNN
+F 2 "SparkFun-PowerIC:TDFN-8" H -2600 -300 60  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -2600 -300 60  0001 C CNN
+	1    5150 1450
 	1    0    0    -1  
 $EndComp
-Text GLabel 3550 1700 0    60   Input ~ 0
-GND
 Entry Wire Line
-	6950 1300 7050 1400
+	6950 1250 7050 1350
 Entry Wire Line
-	6950 1400 7050 1500
+	6950 1350 7050 1450
 $Comp
-L R R?
-U 1 1 58B0F9D2
-P 8650 1200
-F 0 "R?" V 8857 1200 50  0000 C CNN
-F 1 "1k" V 8766 1200 50  0000 C CNN
-F 2 "" V -320 -2500 50  0001 C CNN
-F 3 "" H -250 -2500 50  0001 C CNN
-	1    8650 1200
-	0    -1   -1   0   
-$EndComp
-Text GLabel 8800 1200 2    60   Input ~ 0
-GND
-Text GLabel 8800 1800 2    60   Input ~ 0
-5V
-Text GLabel 8500 1400 2    60   Input ~ 0
-5V
-$Comp
-L CONN_01X06 J?
-U 1 1 58B0FE75
+L CONN_01X06 J3
+U 1 1 58CB47EB
 P 8600 5250
-F 0 "J?" H 8678 5291 50  0000 L CNN
+F 0 "J3" H 8678 5291 50  0000 L CNN
 F 1 "JY-MCU HC-05 Pins" H 8678 5200 50  0000 L CNN
-F 2 "" H -650 1350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H -650 1350 50  0001 C CNN
 F 3 "" H -650 1350 50  0001 C CNN
 	1    8600 5250
 	1    0    0    -1  
@@ -386,204 +301,133 @@ Text GLabel 8400 5300 0    60   Input ~ 0
 BL_TXD
 Text GLabel 8400 5400 0    60   Input ~ 0
 BL_RXD
-Text GLabel 7550 2550 0    60   Input ~ 0
-5V
-Text GLabel 7500 2250 0    60   Input ~ 0
-GND
-Text GLabel 5950 6050 2    60   Input ~ 0
+Text GLabel 7750 2200 0    60   Input ~ 0
+3V3
+Text GLabel 4850 6650 2    60   Input ~ 0
 BL_TXD
-Text GLabel 5950 5950 2    60   Input ~ 0
+Text GLabel 4850 6550 2    60   Input ~ 0
 BL_RXD
-Text Notes 7400 7500 0    60   ~ 0
-Theft-Aware Internet of Things Multi-Sensor
-Text GLabel 1150 1200 0    60   Input ~ 0
-VCC
-Text GLabel 2000 1200 0    60   Input ~ 0
-GND
-Text GLabel 3550 900  0    60   Input ~ 0
-VCC
 $Comp
-L LM7805 U?
-U 1 1 58B3028D
-P 4350 2750
-F 0 "U?" H 4350 3065 50  0000 C CNN
-F 1 "LM7805" H 4350 2974 50  0000 C CNN
-F 2 "" H 1450 600 50  0001 C CNN
-F 3 "https://www.fairchildsemi.com/datasheets/LM/LM7805.pdf" H 1450 600 50  0001 C CNN
-	1    4350 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58B30515
-P 4750 2900
-F 0 "C?" H 4865 2946 50  0000 L CNN
-F 1 "0.1u" H 4865 2855 50  0000 L CNN
-F 2 "" H 1838 300 50  0001 C CNN
-F 3 "" H 1800 450 50  0001 C CNN
-	1    4750 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58B30EF2
-P 3750 2900
-F 0 "C?" H 3865 2946 50  0000 L CNN
-F 1 "0.33u" H 3865 2855 50  0000 L CNN
-F 2 "" H 838 300 50  0001 C CNN
-F 3 "" H 800 450 50  0001 C CNN
-	1    3750 2900
-	1    0    0    -1  
-$EndComp
-Text GLabel 3600 3100 0    60   Input ~ 0
-GND
-Text GLabel 3600 2700 0    60   Input ~ 0
-VCC
-$Comp
-L +9V #PWR?
-U 1 1 58B31C47
-P 1350 1500
-F 0 "#PWR?" H -50 -900 50  0001 C CNN
-F 1 "+9V" H 1365 1673 50  0000 C CNN
-F 2 "" H -50 -750 50  0001 C CNN
-F 3 "" H -50 -750 50  0001 C CNN
-	1    1350 1500
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R?
-U 1 1 58B3455C
+L R R11
+U 1 1 58CB47F8
 P 8100 6100
-F 0 "R?" V 8307 6100 50  0000 C CNN
+F 0 "R11" V 8307 6100 50  0000 C CNN
 F 1 "1k" V 8216 6100 50  0000 C CNN
-F 2 "" V -870 2400 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -870 2400 50  0001 C CNN
 F 3 "" H -800 2400 50  0001 C CNN
 	1    8100 6100
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C?
-U 1 1 58B39E99
-P 7650 2400
-F 0 "C?" H 7765 2446 50  0000 L CNN
-F 1 "0.1u" H 7765 2355 50  0000 L CNN
-F 2 "" H 4738 -200 50  0001 C CNN
-F 3 "" H 4700 -50 50  0001 C CNN
-	1    7650 2400
-	1    0    0    1   
+L C C13
+U 1 1 58CB47FF
+P 7900 2350
+F 0 "C13" H 8015 2396 50  0000 L CNN
+F 1 "0.1uF" H 8015 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4988 -250 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H 4950 -100 50  0001 C CNN
+	1    7900 2350
+	1    0    0    -1  
 $EndComp
-NoConn ~ 8150 5000
-NoConn ~ 8150 5500
-NoConn ~ 5950 6550
-NoConn ~ 5950 6650
+NoConn ~ 8400 5000
 $Comp
-L R R?
-U 1 1 58B48F37
+L R R7
+U 1 1 58CB4807
 P 5900 1050
-F 0 "R?" H 5970 1096 50  0000 L CNN
+F 0 "R7" H 5970 1096 50  0000 L CNN
 F 1 "4.7k" H 5970 1005 50  0000 L CNN
-F 2 "" V 580 -700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 580 -700 50  0001 C CNN
 F 3 "" H 650 -700 50  0001 C CNN
 	1    5900 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
-U 1 1 58B4901D
-P 3700 1150
-F 0 "R?" H 3770 1196 50  0000 L CNN
-F 1 "1k" H 3770 1105 50  0000 L CNN
-F 2 "" V -1620 -600 50  0001 C CNN
-F 3 "" H -1550 -600 50  0001 C CNN
-	1    3700 1150
+L R R3
+U 1 1 58CB480E
+P 3600 1100
+F 0 "R3" H 3670 1146 50  0000 L CNN
+F 1 "1k" H 3670 1055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -1720 -650 50  0001 C CNN
+F 3 "" H -1650 -650 50  0001 C CNN
+	1    3600 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
-U 1 1 58B4905F
-P 4100 1150
-F 0 "R?" H 4170 1196 50  0000 L CNN
-F 1 "150" H 4170 1105 50  0000 L CNN
-F 2 "" V -1220 -600 50  0001 C CNN
-F 3 "" H -1150 -600 50  0001 C CNN
-	1    4100 1150
+L R R4
+U 1 1 58CB4815
+P 4000 1100
+F 0 "R4" H 4070 1146 50  0000 L CNN
+F 1 "150" H 4070 1055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -1320 -650 50  0001 C CNN
+F 3 "" H -1250 -650 50  0001 C CNN
+	1    4000 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C?
-U 1 1 58B492DF
-P 4100 1550
-F 0 "C?" H 4215 1596 50  0000 L CNN
-F 1 "10n" H 4215 1505 50  0000 L CNN
-F 2 "" H -800 400 50  0001 C CNN
-F 3 "" H -800 400 50  0001 C CNN
-	1    4100 1550
+L CP1 C6
+U 1 1 58CB481C
+P 4000 1500
+F 0 "C6" H 4115 1546 50  0000 L CNN
+F 1 "10nF" H 4115 1455 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -900 350 50  0001 C CNN
+F 3 "" H -900 350 50  0001 C CNN
+	1    4000 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L ATMEGA328PB-A IC1
-U 1 1 589F3C1F
-P 4650 5450
-F 0 "IC1" H 4250 6925 50  0000 R BNN
-F 1 "ATMEGA328PB-A" H 4250 6850 50  0000 R BNN
-F 2 "Housings_QFP:LQFP-32_5x5mm_Pitch0.5mm" H 4600 4050 50  0001 L CIN
-F 3 "http://www.atmel.com/Images/Atmel-42397-8-bit-AVR-Microcontroller-ATmega328PB_Datasheet.pdf" H 4350 5500 50  0001 C CNN
-	1    4650 5450
+U 1 1 58CB4823
+P 3550 6050
+F 0 "IC1" H 3150 7525 50  0000 R BNN
+F 1 "ATMEGA328PB-A" H 3150 7450 50  0000 R BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 3500 4650 50  0001 L CIN
+F 3 "http://www.atmel.com/Images/Atmel-42397-8-bit-AVR-Microcontroller-ATmega328PB_Datasheet.pdf" H 3250 6100 50  0001 C CNN
+	1    3550 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 6000 1500 2    60   Input ~ 0
+Text GLabel 6000 1450 2    60   Input ~ 0
 FuelGaugeRestart
-Text GLabel 6000 1600 2    60   Input ~ 0
+Text GLabel 6000 1550 2    60   Input ~ 0
 BatteryLowAlert
 $Comp
-L CP1 C?
-U 1 1 58B4925D
-P 3700 1550
-F 0 "C?" H 3815 1596 50  0000 L CNN
-F 1 "1u" H 3815 1505 50  0000 L CNN
-F 2 "" H -1200 400 50  0001 C CNN
-F 3 "" H -1200 400 50  0001 C CNN
-	1    3700 1550
+L CP1 C5
+U 1 1 58CB482C
+P 3600 1500
+F 0 "C5" H 3715 1546 50  0000 L CNN
+F 1 "1uF" H 3715 1455 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -1300 350 50  0001 C CNN
+F 3 "" H -1300 350 50  0001 C CNN
+	1    3600 1500
 	1    0    0    -1  
 $EndComp
 Text GLabel 7500 3200 0    60   Input ~ 0
-5V
-Text GLabel 7500 3500 0    60   Input ~ 0
-GND
+3V3
 $Comp
-L C C?
-U 1 1 58B6393C
+L C C12
+U 1 1 58CB4834
 P 7650 3350
-F 0 "C?" H 7765 3396 50  0000 L CNN
-F 1 "0.1u" H 7765 3305 50  0000 L CNN
-F 2 "" H 4738 750 50  0001 C CNN
+F 0 "C12" H 7765 3396 50  0000 L CNN
+F 1 "0.1uF" H 7765 3305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4738 750 50  0001 C CNN
 F 3 "" H 4700 900 50  0001 C CNN
 	1    7650 3350
 	1    0    0    -1  
 $EndComp
-Text Label 8000 2550 0    60   ~ 0
-CS
-Text Notes 9200 3800 0    60   ~ 0
+Text Notes 9200 3900 0    60   ~ 0
 Status LEDs
-Text Label 8300 5000 0    60   ~ 0
-EN
-Text Label 8150 5500 0    60   ~ 0
-State
 $Comp
-L C C?
-U 1 1 58B6E60A
-P 7650 5150
-F 0 "C?" H 7765 5196 50  0000 L CNN
-F 1 "0.1u" H 7765 5105 50  0000 L CNN
-F 2 "" H 4738 2550 50  0001 C CNN
-F 3 "" H 4700 2700 50  0001 C CNN
-	1    7650 5150
+L C C11
+U 1 1 58CB483D
+P 7600 5150
+F 0 "C11" H 7715 5196 50  0000 L CNN
+F 1 "0.1uF" H 7715 5105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4688 2550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H 4650 2700 50  0001 C CNN
+	1    7600 5150
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 5300 0    60   Input ~ 0
-GND
-Text GLabel 7550 5000 0    60   Input ~ 0
-5V
+Text GLabel 7450 5000 0    60   Input ~ 0
+3V3
 Text Notes 8950 4850 0    60   ~ 0
 Bluetooth Module
 Text Notes 8950 750  0    60   ~ 0
@@ -594,123 +438,556 @@ Text Notes 9150 5800 0    60   ~ 0
 Alarm buzzer
 Text Notes 6200 750  0    60   ~ 0
 Battery fuel gauge
-Text Notes 6200 2350 0    60   ~ 0
+Text Notes 6000 2350 0    60   ~ 0
 Voltage regulator
 $Comp
-L C C?
-U 1 1 58B54339
-P 3950 3650
-F 0 "C?" H 4065 3696 50  0000 L CNN
-F 1 "0.1u" H 4065 3605 50  0000 L CNN
-F 2 "" H 1038 1050 50  0001 C CNN
-F 3 "" H 1000 1200 50  0001 C CNN
-	1    3950 3650
+L C C3
+U 1 1 58CB484B
+P 2850 4250
+F 0 "C3" H 2965 4296 50  0000 L CNN
+F 1 "0.1uF" H 2965 4205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -62 1650 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -100 1800 50  0001 C CNN
+	1    2850 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C?
-U 1 1 58B54435
-P 3550 3650
-F 0 "C?" H 3665 3696 50  0000 L CNN
-F 1 "10uf" H 3665 3605 50  0000 L CNN
-F 2 "" H -1350 2500 50  0001 C CNN
-F 3 "" H -1350 2500 50  0001 C CNN
-	1    3550 3650
+L CP1 C2
+U 1 1 58CB4852
+P 2450 4250
+F 0 "C2" H 2565 4296 50  0000 L CNN
+F 1 "10uF" H 2565 4205 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -2450 3100 50  0001 C CNN
+F 3 "" H -2450 3100 50  0001 C CNN
+	1    2450 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3300 3800 0    60   Input ~ 0
-GND
+NoConn ~ 2250 6650
+NoConn ~ 2250 6750
+$Comp
+L TPS61200 U1
+U 1 1 58CB485B
+P 3850 3000
+F 0 "U1" H 3850 3467 50  0000 C CNN
+F 1 "TPS61200" H 3850 3376 50  0000 C CNN
+F 2 "SparkFun-PowerIC:DRC-10" H -11300 -800 50  0001 L CNN
+F 3 "https://www.sparkfun.com/datasheets/Prototyping/tps61200.pdf" H -11350 -350 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L1
+U 1 1 58CB4862
+P 3850 2350
+F 0 "L1" V 3672 2350 50  0000 C CNN
+F 1 "4.7uH, 1.2A" V 3763 2350 50  0000 C CNN
+F 2 "SparkFun-Passives:INDUCTOR_4.7UH" H -10500 -1400 50  0001 C CNN
+F 3 "http://products.sumida.com/products/pdf/CDRH2D09.pdf" H -10500 -1400 50  0001 C CNN
+	1    3850 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L M02JST-PTH-2 JP1
+U 1 1 58CB4869
+P 2100 1300
+F 0 "JP1" H 2206 1665 50  0000 C CNN
+F 1 "M02JST-PTH-2" H 2206 1574 50  0000 C CNN
+F 2 "SparkFun-Connectors:JST-2-PTH" H -10800 -2200 50  0001 C CNN
+F 3 "" H -10800 -2350 60  0001 C CNN
+	1    2100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58CB4870
+P 2350 2600
+F 0 "C1" H 2465 2646 50  0000 L CNN
+F 1 "10uF" H 2465 2555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -11062 -1750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -11100 -1600 50  0001 C CNN
+	1    2350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 58CB4877
+P 3050 2600
+F 0 "C4" H 3165 2646 50  0000 L CNN
+F 1 "0.1uF" H 3165 2555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -10362 -1750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -10400 -1600 50  0001 C CNN
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58CB487E
+P 2750 2600
+F 0 "R1" H 2820 2646 50  0000 L CNN
+F 1 "2M" H 2820 2555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -10670 -1650 50  0001 C CNN
+F 3 "" H -10600 -1650 50  0001 C CNN
+	1    2750 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 2900 2    60   Input ~ 0
+3V3
+$Comp
+L C C7
+U 1 1 58CB4886
+P 4450 3550
+F 0 "C7" H 4565 3596 50  0000 L CNN
+F 1 "0.1uF" H 4565 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -11262 -1450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -11300 -1300 50  0001 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58CB488D
+P 4850 3550
+F 0 "R5" H 4920 3596 50  0000 L CNN
+F 1 "220k" H 4920 3505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -10970 -1250 50  0001 C CNN
+F 3 "" H -10900 -1250 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 58CB4894
+P 5250 3150
+F 0 "R6" H 5320 3196 50  0000 L CNN
+F 1 "1.2M" H 5320 3105 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -10570 -1650 50  0001 C CNN
+F 3 "" H -10500 -1650 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 58CB489B
+P 6150 3150
+F 0 "R8" H 6220 3196 50  0000 L CNN
+F 1 "2M" H 6220 3105 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -9670 -1650 50  0001 C CNN
+F 3 "" H -9600 -1650 50  0001 C CNN
+	1    6150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 58CB48A2
+P 6500 3150
+F 0 "C10" H 6615 3196 50  0000 L CNN
+F 1 "22uF" H 6615 3105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -10462 -1550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -10500 -1400 50  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58CB48A9
+P 2750 3500
+F 0 "R2" H 2820 3546 50  0000 L CNN
+F 1 "220k" H 2820 3455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -10670 -750 50  0001 C CNN
+F 3 "" H -10600 -750 50  0001 C CNN
+	1    2750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SOLDERJUMPER_2WAY-OLDPASTE1&2 SJ1
+U 1 1 58CB493D
+P 5700 3400
+F 0 "SJ1" V 5824 3400 50  0000 C CNN
+F 1 "SOLDERJUMPER_2WAY-OLDPASTE1&2" V 5824 3400 50  0001 C CNN
+F 2 "SparkFun-Passives:SJ_3" H -10100 -1950 50  0001 C CNN
+F 3 "" H -10700 -1750 60  0001 C CNN
+	1    5700 3400
+	0    -1   -1   0   
+$EndComp
+Text Label 5300 3400 0    60   ~ 0
+3.3V
+Text Label 5950 3400 0    60   ~ 0
+5V
+Text GLabel 3650 4100 2    60   Input ~ 0
+3V3
+Text GLabel 6550 5650 1    60   Input ~ 0
+3V3
+Text GLabel 6850 5650 1    60   Input ~ 0
+3V3
+Text Label 6850 1250 2    60   ~ 0
+SDA
+Text Label 6850 1350 2    60   ~ 0
+SCL
+$Comp
+L TEST TP1
+U 1 1 58CB495E
+P 5450 5400
+F 0 "TP1" V 5404 5627 50  0000 L CNN
+F 1 "ExtOsc" V 5495 5627 50  0000 L CNN
+F 2 "Connectors:PINTST" H -750 250 50  0001 C CNN
+F 3 "" H -750 250 50  0001 C CNN
+	1    5450 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 58CB4965
+P 5450 5600
+F 0 "TP2" V 5404 5827 50  0000 L CNN
+F 1 "ExtOsc" V 5495 5827 50  0000 L CNN
+F 2 "Connectors:PINTST" H -750 450 50  0001 C CNN
+F 3 "" H -750 450 50  0001 C CNN
+	1    5450 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C8
+U 1 1 58CB4971
+P 5300 5250
+F 0 "C8" H 5415 5296 50  0000 L CNN
+F 1 "22pF" H 5415 5205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -762 50  50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -800 200 50  0001 C CNN
+	1    5300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 58CB4978
+P 5300 5750
+F 0 "C9" H 5415 5796 50  0000 L CNN
+F 1 "22pF" H 5415 5705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1812_HandSoldering" H -762 550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -800 700 50  0001 C CNN
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4850 5350
+NoConn ~ 8400 5500
+NoConn ~ 4850 5050
+$Comp
+L VCC #PWR04
+U 1 1 58CB4991
+P 900 1350
+F 0 "#PWR04" H -150 -550 50  0001 C CNN
+F 1 "VCC" H 918 1523 50  0000 C CNN
+F 2 "" H -150 -400 50  0001 C CNN
+F 3 "" H -150 -400 50  0001 C CNN
+	1    900  1350
+	-1   0    0    1   
+$EndComp
+Text GLabel 4850 7150 2    60   Input ~ 0
+FuelGaugeRestart
+Text GLabel 4850 7250 2    60   Input ~ 0
+BatteryLowAlert
+$Comp
+L VCC #PWR05
+U 1 1 58CB4999
+P 2400 1200
+F 0 "#PWR05" H 1350 -700 50  0001 C CNN
+F 1 "VCC" V 2417 1328 50  0000 L CNN
+F 2 "" H 1350 -550 50  0001 C CNN
+F 3 "" H 1350 -550 50  0001 C CNN
+	1    2400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58CB499F
+P 2450 1300
+F 0 "#PWR06" H 400 0   50  0001 C CNN
+F 1 "GND" H 2455 1127 50  0000 C CNN
+F 2 "" H 400 250 50  0001 C CNN
+F 3 "" H 400 250 50  0001 C CNN
+	1    2450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 58CB49A6
+P 1700 2350
+F 0 "#PWR07" H 650 450 50  0001 C CNN
+F 1 "VCC" V 1718 2477 50  0000 L CNN
+F 2 "" H 650 600 50  0001 C CNN
+F 3 "" H 650 600 50  0001 C CNN
+	1    1700 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 58CB49AC
+P 1650 3800
+F 0 "#PWR08" H -400 2500 50  0001 C CNN
+F 1 "GND" H 1655 3627 50  0000 C CNN
+F 2 "" H -400 2750 50  0001 C CNN
+F 3 "" H -400 2750 50  0001 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 58CB49B2
+P 2200 4400
+F 0 "#PWR09" H 150 3100 50  0001 C CNN
+F 1 "GND" H 2205 4227 50  0000 C CNN
+F 2 "" H 150 3350 50  0001 C CNN
+F 3 "" H 150 3350 50  0001 C CNN
+	1    2200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 58CB49B8
+P 3400 1650
+F 0 "#PWR010" H 1350 350 50  0001 C CNN
+F 1 "GND" H 3405 1477 50  0000 C CNN
+F 2 "" H 1350 600 50  0001 C CNN
+F 3 "" H 1350 600 50  0001 C CNN
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 58CB49BE
+P 3450 850
+F 0 "#PWR011" H 2400 -1050 50  0001 C CNN
+F 1 "VCC" V 3468 977 50  0000 L CNN
+F 2 "" H 2400 -900 50  0001 C CNN
+F 3 "" H 2400 -900 50  0001 C CNN
+	1    3450 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 58CB49C4
+P 3350 7550
+F 0 "#PWR012" H 1300 6250 50  0001 C CNN
+F 1 "GND" H 3355 7377 50  0000 C CNN
+F 2 "" H 1300 6500 50  0001 C CNN
+F 3 "" H 1300 6500 50  0001 C CNN
+	1    3350 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 58CB49CA
+P 6000 5900
+F 0 "#PWR013" H 3950 4600 50  0001 C CNN
+F 1 "GND" H 6005 5727 50  0000 C CNN
+F 2 "" H 3950 4850 50  0001 C CNN
+F 3 "" H 3950 4850 50  0001 C CNN
+	1    6000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 58CB49D0
+P 7850 6300
+F 0 "#PWR014" H 5800 5000 50  0001 C CNN
+F 1 "GND" H 7855 6127 50  0000 C CNN
+F 2 "" H 5800 5250 50  0001 C CNN
+F 3 "" H 5800 5250 50  0001 C CNN
+	1    7850 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 58CB49D6
+P 7350 5300
+F 0 "#PWR015" H 5300 4000 50  0001 C CNN
+F 1 "GND" H 7355 5127 50  0000 C CNN
+F 2 "" H 5300 4250 50  0001 C CNN
+F 3 "" H 5300 4250 50  0001 C CNN
+	1    7350 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 58CB49DC
+P 8550 4350
+F 0 "#PWR016" H 6500 3050 50  0001 C CNN
+F 1 "GND" H 8555 4177 50  0000 C CNN
+F 2 "" H 6500 3300 50  0001 C CNN
+F 3 "" H 6500 3300 50  0001 C CNN
+	1    8550 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 58CB49E2
+P 7500 3500
+F 0 "#PWR017" H 5450 2200 50  0001 C CNN
+F 1 "GND" H 7505 3327 50  0000 C CNN
+F 2 "" H 5450 2450 50  0001 C CNN
+F 3 "" H 5450 2450 50  0001 C CNN
+	1    7500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 58CB49E8
+P 7450 2500
+F 0 "#PWR018" H 5400 1200 50  0001 C CNN
+F 1 "GND" H 7455 2327 50  0000 C CNN
+F 2 "" H 5400 1450 50  0001 C CNN
+F 3 "" H 5400 1450 50  0001 C CNN
+	1    7450 2500
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 7800 2850
+NoConn ~ 7800 2750
+Text GLabel 4850 6750 2    60   Input ~ 0
+INT1
+$Comp
+L CONN_01X09 J1
+U 1 1 58C7D27F
+P 8600 2650
+F 0 "J1" H 8677 2691 50  0000 L CNN
+F 1 "ADXL345 Connector" H 8677 2600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H -650 250 50  0001 C CNN
+F 3 "" H -650 250 50  0001 C CNN
+	1    8600 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 2550
+NoConn ~ 8400 2350
+$Comp
+L SW_SPST SW1
+U 1 1 58CA70F7
+P 8950 1200
+F 0 "SW1" H 8950 1435 50  0000 C CNN
+F 1 "Connection Button" H 8950 1344 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H -1000 -150 50  0001 C CNN
+F 3 "http://www.ckswitches.com/media/1471/pts645.pdf" H -1000 -150 50  0001 C CNN
+	1    8950 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8150 1200 0    60   Input ~ 0
+ConnectedButton
+$Comp
+L R R14
+U 1 1 58CA7407
+P 8350 1000
+F 0 "R14" V 8557 1000 50  0000 C CNN
+F 1 "10k" V 8466 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -620 -2700 50  0001 C CNN
+F 3 "" H -550 -2700 50  0001 C CNN
+	1    8350 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 1200 2    60   Input ~ 0
+3V3
+$Comp
+L GND #PWR019
+U 1 1 58CA740E
+P 8350 850
+F 0 "#PWR019" H 6300 -450 50  0001 C CNN
+F 1 "GND" H 8355 677 50  0000 C CNN
+F 2 "" H 6300 -200 50  0001 C CNN
+F 3 "" H 6300 -200 50  0001 C CNN
+	1    8350 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_SPST SW2
+U 1 1 58CA7C1F
+P 8950 1900
+F 0 "SW2" H 8950 2135 50  0000 C CNN
+F 1 "Reset Button" H 8950 2044 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H -1000 550 50  0001 C CNN
+F 3 "http://www.ckswitches.com/media/1471/pts645.pdf" H -1000 550 50  0001 C CNN
+	1    8950 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8150 1900 0    60   Input ~ 0
+ResetButton
+$Comp
+L R R15
+U 1 1 58CA7C26
+P 8350 1700
+F 0 "R15" V 8557 1700 50  0000 C CNN
+F 1 "10k" V 8466 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -620 -2000 50  0001 C CNN
+F 3 "" H -550 -2000 50  0001 C CNN
+	1    8350 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 1550 1    60   Input ~ 0
+3V3
+$Comp
+L GND #PWR020
+U 1 1 58CA7C2D
+P 9300 1900
+F 0 "#PWR020" H 7250 600 50  0001 C CNN
+F 1 "GND" H 9305 1727 50  0000 C CNN
+F 2 "" H 7250 850 50  0001 C CNN
+F 3 "" H 7250 850 50  0001 C CNN
+	1    9300 1900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7150 3050 8150 3050
+	7150 3050 8400 3050
 Wire Wire Line
-	5950 5550 6950 5550
+	4850 6150 6950 6150
 Wire Wire Line
-	5950 5650 6950 5650
+	4850 6250 6950 6250
 Wire Wire Line
-	7150 2950 8150 2950
+	7150 2950 8400 2950
 Wire Bus Line
-	7050 1250 7050 5900
+	7050 1250 7050 6400
 Wire Bus Line
 	7050 4100 7050 4200
 Wire Wire Line
-	6750 5650 6750 5400
-Connection ~ 6750 5650
+	6850 6250 6850 6000
+Connection ~ 6850 6250
 Wire Wire Line
-	6550 5550 6550 5400
-Connection ~ 6550 5550
+	6550 6150 6550 6000
+Connection ~ 6550 6150
 Wire Wire Line
-	1350 850  1350 1500
+	900  1050 900  1350
 Wire Wire Line
-	1350 1200 1150 1200
-Connection ~ 1350 1200
-Wire Wire Line
-	2200 850  2200 1500
-Wire Wire Line
-	2200 1200 2000 1200
-Connection ~ 2200 1200
-Connection ~ 4750 2700
+	1350 1050 1350 1350
 Wire Wire Line
 	7850 5900 8350 5900
 Wire Wire Line
-	4100 1300 4100 1400
+	4000 1250 4000 1350
 Wire Wire Line
-	4100 1300 4400 1300
+	4000 1250 4400 1250
 Wire Wire Line
-	4100 900  4100 1000
+	4000 850  4000 950 
 Wire Wire Line
-	4400 1400 3700 1400
+	4400 1350 3600 1350
 Wire Wire Line
-	4400 1700 3550 1700
-Connection ~ 3700 1700
+	3400 1650 4400 1650
+Connection ~ 3600 1650
 Wire Wire Line
-	4400 1500 4400 1700
+	4400 1550 4400 1550
 Wire Wire Line
-	4400 1600 4400 1600
-Connection ~ 4400 1600
+	3600 950  3600 850 
 Wire Wire Line
-	3700 1000 3700 900 
+	3450 850  5900 850 
+Connection ~ 3600 850 
+Connection ~ 4000 1250
+Connection ~ 4000 1650
 Wire Wire Line
-	3550 900  5900 900 
-Connection ~ 3700 900 
-Connection ~ 4100 1300
-Connection ~ 4100 1700
+	5900 1450 6000 1450
 Wire Wire Line
-	5900 1500 6000 1500
+	5900 1550 6000 1550
+Connection ~ 5900 1550
 Wire Wire Line
-	5900 1600 6000 1600
-Connection ~ 5900 1600
+	5900 1250 6950 1250
 Wire Wire Line
-	5900 1300 6950 1300
+	5900 1350 6950 1350
+Connection ~ 4000 850 
 Wire Wire Line
-	5900 1400 6950 1400
-Connection ~ 4100 900 
+	5900 1200 5900 1550
 Wire Wire Line
-	5900 1200 5900 1600
-Wire Wire Line
-	3700 1400 3700 1300
-Wire Wire Line
-	3600 2700 3950 2700
-Connection ~ 3750 2700
-Wire Wire Line
-	3600 3100 4750 3100
-Wire Wire Line
-	4350 3100 4350 3000
-Connection ~ 3750 3100
-Connection ~ 4350 3100
-Wire Wire Line
-	3750 2750 3750 2700
-Wire Wire Line
-	3750 3050 3750 3100
-Wire Wire Line
-	4750 2750 4750 2700
-Wire Wire Line
-	4750 3100 4750 3050
-Wire Wire Line
-	7950 2550 7950 2450
-Wire Wire Line
-	7500 2250 7950 2250
-Wire Wire Line
-	7950 2250 7950 2350
+	3600 1350 3600 1250
 Wire Wire Line
 	8400 3250 8400 3250
 Wire Wire Line
@@ -730,7 +1007,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 6300 8350 6200
 Wire Wire Line
-	7750 6300 8350 6300
+	7850 6300 8350 6300
 Wire Wire Line
 	8100 5900 8100 5950
 Connection ~ 8100 5900
@@ -746,75 +1023,232 @@ Wire Wire Line
 Wire Wire Line
 	7750 4350 7650 4350
 Wire Wire Line
-	8450 4350 8700 4350
+	8450 4350 8550 4350
 Wire Wire Line
 	8450 3950 8550 3950
 Wire Wire Line
 	8550 3950 8550 4350
 Connection ~ 8550 4350
-Connection ~ 7950 2550
 Wire Wire Line
-	7550 2550 8150 2550
-Wire Wire Line
-	7950 2450 8150 2450
-Wire Wire Line
-	7950 2350 8150 2350
-Wire Wire Line
-	8400 5000 8150 5000
+	8400 5000 8400 5000
 Wire Wire Line
 	7950 5200 8400 5200
 Wire Wire Line
 	7950 5000 7950 5100
 Wire Wire Line
-	7550 5000 7950 5000
+	7450 5000 7950 5000
 Wire Wire Line
 	7950 5300 7950 5200
 Wire Wire Line
-	7500 5300 7950 5300
+	7350 5300 7950 5300
 Wire Wire Line
 	7950 5100 8400 5100
+Wire Notes Line
+	3050 600  9850 600 
+Wire Notes Line
+	9850 600  9850 6500
+Wire Notes Line
+	7150 600  7150 6500
 Wire Wire Line
-	8150 5500 8400 5500
+	2200 4400 2850 4400
 Wire Notes Line
-	3200 600  9850 600 
-Wire Notes Line
-	9850 600  9850 6450
-Wire Notes Line
-	7150 2150 7150 650 
-Wire Notes Line
-	3200 600  3200 3250
-Wire Notes Line
-	3200 2150 9850 2150
-Wire Notes Line
-	3200 3250 7150 3250
-Wire Wire Line
-	3300 3800 3950 3800
-Wire Notes Line
-	7150 600  7150 3150
-Wire Notes Line
-	9850 6450 7150 6450
-Wire Notes Line
-	7150 6450 7150 3650
+	7150 6500 9850 6500
 Wire Notes Line
 	9850 5650 7150 5650
 Wire Notes Line
 	9850 4700 7150 4700
 Wire Notes Line
-	7150 3650 9850 3650
+	7150 3750 9850 3750
+Wire Wire Line
+	3250 4100 3250 4550
+Wire Wire Line
+	3450 4100 3450 4550
+Wire Wire Line
+	2450 4100 3650 4100
+Wire Wire Line
+	3450 2800 3400 2800
+Wire Wire Line
+	3400 2350 3400 3100
+Wire Wire Line
+	1700 2350 3700 2350
+Connection ~ 3400 2350
+Wire Wire Line
+	3400 3100 3450 3100
+Connection ~ 3400 2800
+Wire Wire Line
+	3450 3000 3400 3000
+Connection ~ 3400 3000
+Wire Wire Line
+	3050 2450 3050 2350
+Connection ~ 3050 2350
+Wire Wire Line
+	2750 2450 2750 2350
+Connection ~ 2750 2350
+Wire Wire Line
+	2750 2900 3050 2900
+Wire Wire Line
+	3050 2900 3050 2750
+Wire Wire Line
+	2750 3200 3450 3200
+Connection ~ 2750 2900
+Connection ~ 2750 3200
+Wire Wire Line
+	1650 3800 6500 3800
+Connection ~ 2350 2350
+Wire Wire Line
+	2350 2750 2350 3800
+Connection ~ 2350 3800
+Connection ~ 2750 3800
+Wire Wire Line
+	3450 3300 3400 3300
+Wire Wire Line
+	3400 3300 3400 3800
+Connection ~ 3400 3800
+Wire Wire Line
+	3850 3500 3850 3800
+Connection ~ 3850 3800
+Wire Wire Line
+	4250 3300 4250 3300
+Wire Wire Line
+	4250 3300 4250 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	4000 2350 4300 2350
+Wire Wire Line
+	4300 2350 4300 2800
+Wire Wire Line
+	4300 2800 4250 2800
+Wire Wire Line
+	4250 2900 6700 2900
+Wire Wire Line
+	6500 2900 6500 3000
+Wire Wire Line
+	4250 3000 4450 3000
+Wire Wire Line
+	4450 3800 4450 3700
+Wire Wire Line
+	4450 3000 4450 3400
+Connection ~ 4450 3800
+Wire Wire Line
+	4850 3700 4850 3800
+Connection ~ 4850 3800
+Wire Wire Line
+	4350 3350 5150 3350
+Wire Wire Line
+	4350 3350 4350 3200
+Wire Wire Line
+	4350 3200 4250 3200
+Wire Wire Line
+	4850 3350 4850 3400
+Wire Wire Line
+	5150 3350 5150 3600
+Wire Wire Line
+	5150 3600 5700 3600
+Connection ~ 4850 3350
+Wire Wire Line
+	5250 3000 5250 2900
+Connection ~ 5250 2900
+Wire Wire Line
+	5250 3300 5250 3400
+Wire Wire Line
+	5250 3400 5500 3400
+Wire Wire Line
+	5900 3400 6150 3400
+Wire Wire Line
+	6150 3400 6150 3300
+Connection ~ 6150 2900
+Wire Wire Line
+	6150 2900 6150 3000
+Connection ~ 6500 2900
+Wire Wire Line
+	6500 3800 6500 3300
+Wire Wire Line
+	2750 2750 2750 3350
+Wire Wire Line
+	2350 2350 2350 2450
+Wire Wire Line
+	5900 850  5900 900 
+Wire Wire Line
+	6550 5650 6550 5700
+Wire Wire Line
+	6850 5650 6850 5700
+Connection ~ 7900 2200
 Wire Notes Line
-	7150 3100 7150 3700
-NoConn ~ 3350 6050
-NoConn ~ 3350 6150
-Wire Wire Line
-	4350 3500 4350 3950
-Wire Wire Line
-	4550 3500 4550 3950
-Wire Wire Line
-	3550 3500 5250 3500
-Wire Wire Line
-	5250 3500 5250 2700
-Wire Wire Line
-	5250 2700 4750 2700
+	3050 600  3050 2100
 Wire Notes Line
-	7150 2600 7150 2950
+	1400 2100 9850 2100
+Wire Notes Line
+	7150 4000 1400 4000
+Wire Notes Line
+	1400 4000 1400 2100
+Wire Wire Line
+	3350 7550 3450 7550
+Connection ~ 3350 7550
+Wire Wire Line
+	4850 4950 4850 4950
+Wire Wire Line
+	5000 5550 5000 5600
+Wire Wire Line
+	5000 5400 5000 5450
+Wire Wire Line
+	5000 5400 5450 5400
+Wire Wire Line
+	5000 5600 5450 5600
+Connection ~ 3250 4100
+Connection ~ 3450 4100
+Connection ~ 2850 4100
+Wire Wire Line
+	5000 5450 4850 5450
+Wire Wire Line
+	5000 5550 4850 5550
+Connection ~ 5300 5400
+Connection ~ 5300 5600
+Wire Wire Line
+	5300 5100 6000 5100
+Wire Wire Line
+	6000 5100 6000 5900
+Wire Wire Line
+	6000 5900 5300 5900
+Connection ~ 5300 5900
+Connection ~ 6000 5900
+Connection ~ 7600 5000
+Connection ~ 7600 5300
+Wire Wire Line
+	2400 1300 2450 1300
+Wire Wire Line
+	2750 3650 2750 3800
+Connection ~ 2450 4400
+Wire Wire Line
+	7800 2650 8400 2650
+Wire Wire Line
+	8400 2750 7800 2750
+Wire Wire Line
+	7800 2850 8400 2850
+Wire Wire Line
+	8400 2450 8250 2450
+Wire Wire Line
+	8250 2450 8250 2500
+Wire Wire Line
+	8250 2500 7450 2500
+Connection ~ 7900 2500
+Wire Wire Line
+	7750 2200 8250 2200
+Wire Wire Line
+	8400 2250 8250 2250
+Wire Wire Line
+	8250 2250 8250 2200
+Wire Wire Line
+	4400 1650 4400 1450
+Wire Wire Line
+	8150 1200 8750 1200
+Wire Wire Line
+	8350 1200 8350 1150
+Connection ~ 8350 1200
+Wire Wire Line
+	8150 1900 8750 1900
+Wire Wire Line
+	8350 1900 8350 1850
+Connection ~ 8350 1900
+Wire Wire Line
+	9300 1900 9150 1900
 $EndSCHEMATC
