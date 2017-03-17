@@ -1,0 +1,5 @@
+git clone https://github.com/KiCad/Housings_QFP.pretty.git
+git clone https://github.com/benwis/SparkFun-Kicad-Libraries.git
+git clone https://github.com/tessel/tm-kicad-library.git
+bzr branch http://repository.varesano.net/fv_kicad_lib/
+
