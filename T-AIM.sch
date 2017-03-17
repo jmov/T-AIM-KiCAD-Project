@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:T-AIMCOMPS
 LIBS:fv_kicad_lib
 LIBS:74xgxx
 LIBS:ac-dc
