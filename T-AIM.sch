@@ -105,11 +105,7 @@ Comment4 ""
 $EndDescr
 NoConn ~ 4850 5150
 NoConn ~ 4850 5250
-NoConn ~ 4850 5850
-NoConn ~ 4850 5950
-NoConn ~ 4850 6050
 NoConn ~ 2250 6950
-NoConn ~ 2250 6850
 NoConn ~ 2250 5150
 NoConn ~ 4850 5750
 $Comp
@@ -177,7 +173,7 @@ U 1 1 58CB4795
 P 7900 3950
 F 0 "D1" H 7891 4166 50  0000 C CNN
 F 1 "Red LED" H 7891 4075 50  0000 C CNN
-F 2 "SparkFun-LED:LED-1206" H 3550 -750 50  0001 C CNN
+F 2 "LEDs:LED_1206" H 3550 -750 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-98-0002/S_110_LTST-C150CKT.pdf" H 3550 -750 50  0001 C CNN
 	1    7900 3950
 	-1   0    0    1   
@@ -188,14 +184,14 @@ U 1 1 58CB479C
 P 7900 4350
 F 0 "D2" H 7891 4566 50  0000 C CNN
 F 1 "Blue LED" H 7891 4475 50  0000 C CNN
-F 2 "SparkFun-LED:LED-1206" H 3550 -350 50  0001 C CNN
+F 2 "LEDs:LED_1206" H 3550 -350 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/S_110_LTST-C150TBKT(0630).pdf" H 3550 -350 50  0001 C CNN
 	1    7900 4350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4850 6850 2    60   Input ~ 0
-RedLED
 Text GLabel 4850 6950 2    60   Input ~ 0
+RedLED
+Text GLabel 4850 6850 2    60   Input ~ 0
 BlueLED
 $Comp
 L R R12
@@ -223,13 +219,13 @@ Text GLabel 7650 3950 0    60   Input ~ 0
 RedLED
 Text GLabel 7650 4350 0    60   Input ~ 0
 BlueLED
-Text GLabel 4850 7050 2    60   Input ~ 0
+Text GLabel 4850 5850 2    60   Input ~ 0
 AlarmBuzzer
 Text GLabel 7850 5900 0    60   Input ~ 0
 AlarmBuzzer
 Text GLabel 4850 6350 2    60   Input ~ 0
 ResetButton
-Text GLabel 4850 4850 2    60   Input ~ 0
+Text GLabel 2250 6850 0    60   Input ~ 0
 ConnectedButton
 Text GLabel 4850 4950 2    60   Input ~ 0
 PIR_OUT
@@ -481,7 +477,7 @@ U 1 1 58CB4862
 P 3850 2350
 F 0 "L1" V 3672 2350 50  0000 C CNN
 F 1 "4.7uH, 1.2A" V 3763 2350 50  0000 C CNN
-F 2 "SparkFun-Passives:INDUCTOR_4.7UH" H -10500 -1400 50  0001 C CNN
+F 2 "T-AIM:INDUCTOR_4.7UH" H -10500 -1400 50  0001 C CNN
 F 3 "http://products.sumida.com/products/pdf/CDRH2D09.pdf" H -10500 -1400 50  0001 C CNN
 	1    3850 2350
 	0    1    1    0   
@@ -681,9 +677,9 @@ F 3 "" H -150 -400 50  0001 C CNN
 	1    900  1350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4850 7150 2    60   Input ~ 0
+Text GLabel 4850 5950 2    60   Input ~ 0
 FuelGaugeRestart
-Text GLabel 4850 7250 2    60   Input ~ 0
+Text GLabel 4850 6050 2    60   Input ~ 0
 BatteryLowAlert
 $Comp
 L VCC #PWR05
@@ -1251,4 +1247,8 @@ Wire Wire Line
 Connection ~ 8350 1900
 Wire Wire Line
 	9300 1900 9150 1900
+NoConn ~ 4850 7150
+NoConn ~ 4850 7250
+NoConn ~ 4850 7050
+NoConn ~ 4850 4850
 $EndSCHEMATC
