@@ -190,7 +190,7 @@ F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/S_110_LTST-
 $EndComp
 Text GLabel 4850 6950 2    60   Input ~ 0
 RedLED
-Text GLabel 4850 6850 2    60   Input ~ 0
+Text GLabel 2250 6650 0    60   Input ~ 0
 BlueLED
 $Comp
 L R R12
@@ -218,7 +218,7 @@ Text GLabel 7650 3950 0    60   Input ~ 0
 RedLED
 Text GLabel 7650 4350 0    60   Input ~ 0
 BlueLED
-Text GLabel 4850 5850 2    60   Input ~ 0
+Text GLabel 4850 5350 2    60   Input ~ 0
 AlarmBuzzer
 Text GLabel 7850 5900 0    60   Input ~ 0
 AlarmBuzzer
@@ -287,8 +287,8 @@ U 1 1 58CB47EB
 P 8600 5250
 F 0 "J3" H 8678 5291 50  0000 L CNN
 F 1 "JY-MCU HC-05 Pins" H 8678 5200 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H -650 1350 50  0001 C CNN
-F 3 "" H -650 1350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.00mm" H -650 1350 50  0001 C CNN
+F 3 "http://www.electronica60norte.com/mwfls/pdf/newBluetooth.pdf" H -650 1350 50  0001 C CNN
 	1    8600 5250
 	1    0    0    -1  
 $EndComp
@@ -457,7 +457,6 @@ F 3 "" H -2450 3100 50  0001 C CNN
 	1    2450 4250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2250 6650
 NoConn ~ 2250 6750
 $Comp
 L TPS61200 U1
@@ -485,8 +484,8 @@ $Comp
 L M02JST-PTH-2 JP1
 U 1 1 58CB4869
 P 2100 1300
-F 0 "JP1" H 2206 1665 50  0000 C CNN
-F 1 "M02JST-PTH-2" H 2206 1574 50  0000 C CNN
+F 0 "JP1" H 2100 1650 50  0000 C CNN
+F 1 "M02JST-PTH-2" H 2100 1550 50  0000 C CNN
 F 2 "SparkFun-Connectors:JST-2-PTH" H -10800 -2200 50  0001 C CNN
 F 3 "" H -10800 -2350 60  0001 C CNN
 	1    2100 1300
@@ -662,7 +661,6 @@ F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afi
 	1    5300 5750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4850 5350
 NoConn ~ 8400 5500
 NoConn ~ 4850 5050
 $Comp
@@ -676,31 +674,31 @@ F 3 "" H -150 -400 50  0001 C CNN
 	1    900  1350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4850 5950 2    60   Input ~ 0
+Text GLabel 4850 6750 2    60   Input ~ 0
 FuelGaugeRestart
-Text GLabel 4850 6050 2    60   Input ~ 0
+Text GLabel 4850 6850 2    60   Input ~ 0
 BatteryLowAlert
 $Comp
 L VCC #PWR05
 U 1 1 58CB4999
-P 2400 1200
-F 0 "#PWR05" H 1350 -700 50  0001 C CNN
-F 1 "VCC" V 2417 1328 50  0000 L CNN
-F 2 "" H 1350 -550 50  0001 C CNN
-F 3 "" H 1350 -550 50  0001 C CNN
-	1    2400 1200
+P 2450 1300
+F 0 "#PWR05" H 1400 -600 50  0001 C CNN
+F 1 "VCC" V 2467 1428 50  0000 L CNN
+F 2 "" H 1400 -450 50  0001 C CNN
+F 3 "" H 1400 -450 50  0001 C CNN
+	1    2450 1300
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 58CB499F
-P 2450 1300
-F 0 "#PWR06" H 400 0   50  0001 C CNN
-F 1 "GND" H 2455 1127 50  0000 C CNN
-F 2 "" H 400 250 50  0001 C CNN
-F 3 "" H 400 250 50  0001 C CNN
-	1    2450 1300
-	1    0    0    -1  
+P 2550 1200
+F 0 "#PWR06" H 500 -100 50  0001 C CNN
+F 1 "GND" H 2555 1027 50  0000 C CNN
+F 2 "" H 500 150 50  0001 C CNN
+F 3 "" H 500 150 50  0001 C CNN
+	1    2550 1200
+	-1   0    0    1   
 $EndComp
 $Comp
 L VCC #PWR07
@@ -836,7 +834,7 @@ F 3 "" H 5400 1450 50  0001 C CNN
 $EndComp
 NoConn ~ 7800 2850
 NoConn ~ 7800 2750
-Text GLabel 4850 6750 2    60   Input ~ 0
+Text GLabel 4850 5950 2    60   Input ~ 0
 INT1
 $Comp
 L CONN_01X09 J1
@@ -1209,7 +1207,7 @@ Connection ~ 6000 5900
 Connection ~ 7600 5000
 Connection ~ 7600 5300
 Wire Wire Line
-	2400 1300 2450 1300
+	2400 1200 2550 1200
 Wire Wire Line
 	2750 3650 2750 3800
 Connection ~ 2450 4400
@@ -1250,4 +1248,9 @@ NoConn ~ 4850 7150
 NoConn ~ 4850 7250
 NoConn ~ 4850 7050
 NoConn ~ 4850 4850
+Wire Wire Line
+	2450 1300 2400 1300
+NoConn ~ 4850 5850
+NoConn ~ 5550 4650
+NoConn ~ 4850 6050
 $EndSCHEMATC
