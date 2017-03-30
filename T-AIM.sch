@@ -1253,4 +1253,6 @@ Wire Wire Line
 NoConn ~ 4850 5850
 NoConn ~ 5550 4650
 NoConn ~ 4850 6050
+Text Notes 1450 5100 0    60   ~ 0
+3.7V
 $EndSCHEMATC
