@@ -148,8 +148,9 @@ U 1 1 58CB4778
 P 8600 3350
 F 0 "J2" H 8678 3391 50  0000 L CNN
 F 1 "PIR Sensor Connector" H 8678 3300 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-5-3" H 6000 -1050 50  0001 C CNN
+F 2 "T-AIM:TO-5-3" H 6000 -1050 50  0001 C CNN
 F 3 "http://www3.panasonic.biz/ac/e_download/control/sensor/human/catalog/bltn_eng_papirs_final_ekmc_saturn.pdf" H 6000 -1050 50  0001 C CNN
+F 4 "EKMC1603111" H 5150 1450 60  0001 C CNN "manf#"
 	1    8600 3350
 	1    0    0    -1  
 $EndComp
@@ -162,7 +163,8 @@ P 8450 6100
 F 0 "BZ1" H 8603 6129 50  0000 L CNN
 F 1 "Alarm Buzzer" H 8603 6038 50  0000 L CNN
 F 2 "T-AIM:AT-1220-TT-9-R" V 5825 1500 50  0001 C CNN
-F 3 "" V 5825 1500 50  0001 C CNN
+F 3 "http://www.puiaudio.com/pdf/AT-1220-TT-9-R.pdf" V 5825 1500 50  0001 C CNN
+F 4 "AT-1220-TT-9-R" H 5150 1450 60  0001 C CNN "manf#"
 	1    8450 6100
 	1    0    0    -1  
 $EndComp
@@ -174,6 +176,7 @@ F 0 "D1" H 7891 4166 50  0000 C CNN
 F 1 "Red LED" H 7891 4075 50  0000 C CNN
 F 2 "LEDs:LED_1206" H 3550 -750 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS-22-98-0002/S_110_LTST-C150CKT.pdf" H 3550 -750 50  0001 C CNN
+F 4 "LTST-C150CKT" H 5150 1450 60  0001 C CNN "manf#"
 	1    7900 3950
 	-1   0    0    1   
 $EndComp
@@ -185,6 +188,7 @@ F 0 "D2" H 7891 4566 50  0000 C CNN
 F 1 "Blue LED" H 7891 4475 50  0000 C CNN
 F 2 "LEDs:LED_1206" H 3550 -350 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/S_110_LTST-C150TBKT(0630).pdf" H 3550 -350 50  0001 C CNN
+F 4 "LTST-C150TBKT" H 5150 1450 60  0001 C CNN "manf#"
 	1    7900 4350
 	-1   0    0    1   
 $EndComp
@@ -198,20 +202,10 @@ U 1 1 58CB47A5
 P 8300 3950
 F 0 "R12" V 8093 3950 50  0000 C CNN
 F 1 "220" V 8184 3950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -670 250 50  0001 C CNN
-F 3 "" H -600 250 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -670 250 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -600 250 50  0001 C CNN
+F 4 "RC1206FR-07220RL" H 5150 1450 60  0001 C CNN "manf#"
 	1    8300 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R13
-U 1 1 58CB47AC
-P 8300 4350
-F 0 "R13" V 8093 4350 50  0000 C CNN
-F 1 "220" V 8184 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -670 650 50  0001 C CNN
-F 3 "" H -600 650 50  0001 C CNN
-	1    8300 4350
 	0    -1   -1   0   
 $EndComp
 Text GLabel 7650 3950 0    60   Input ~ 0
@@ -245,28 +239,6 @@ SDA
 Text Label 7450 3050 2    60   ~ 0
 SCL
 $Comp
-L R R9
-U 1 1 58CB47CB
-P 6550 5850
-F 0 "R9" H 6620 5896 50  0000 L CNN
-F 1 "10k" H 6620 5805 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -1270 1800 50  0001 C CNN
-F 3 "" H -1200 1800 50  0001 C CNN
-	1    6550 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R10
-U 1 1 58CB47D2
-P 6850 5850
-F 0 "R10" H 6920 5896 50  0000 L CNN
-F 1 "10k" H 6920 5805 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -970 1800 50  0001 C CNN
-F 3 "" H -900 1800 50  0001 C CNN
-	1    6850 5850
-	1    0    0    -1  
-$EndComp
-$Comp
 L MAX17043 IC2
 U 1 1 58CB47D9
 P 5150 1450
@@ -274,6 +246,7 @@ F 0 "IC2" H 5150 977 50  0000 C CNN
 F 1 "MAX17043" H 5150 886 50  0000 C CNN
 F 2 "SparkFun-PowerIC:TDFN-8" H -2600 -300 60  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17043-MAX17044.pdf" H -2600 -300 60  0001 C CNN
+F 4 "MAX17043G+U" H 5150 1450 60  0001 C CNN "manf#"
 	1    5150 1450
 	1    0    0    -1  
 $EndComp
@@ -289,6 +262,8 @@ F 0 "J3" H 8678 5291 50  0000 L CNN
 F 1 "JY-MCU HC-05 Pins" H 8678 5200 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.00mm" H -650 1350 50  0001 C CNN
 F 3 "http://www.electronica60norte.com/mwfls/pdf/newBluetooth.pdf" H -650 1350 50  0001 C CNN
+F 4 "https://www.amazon.de/SainSmart-Wireless-Transceiver-Bluetooth-Arduino/dp/B01MQE2XFT/ref=sr_1_1?ie=UTF8&qid=1490716311&sr=8-1&keywords=jy-mcu+hc-05" H 8600 5250 60  0001 C CNN "kicost:link"
+F 5 "1:$7.99" H 8600 5250 60  0001 C CNN "kicost:pricing"
 	1    8600 5250
 	1    0    0    -1  
 $EndComp
@@ -302,28 +277,6 @@ Text GLabel 4850 6650 2    60   Input ~ 0
 BL_TXD
 Text GLabel 4850 6550 2    60   Input ~ 0
 BL_RXD
-$Comp
-L R R11
-U 1 1 58CB47F8
-P 8100 6100
-F 0 "R11" V 8307 6100 50  0000 C CNN
-F 1 "1k" V 8216 6100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -870 2400 50  0001 C CNN
-F 3 "" H -800 2400 50  0001 C CNN
-	1    8100 6100
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C13
-U 1 1 58CB47FF
-P 7900 2350
-F 0 "C13" H 8015 2396 50  0000 L CNN
-F 1 "0.1uF" H 8015 2305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4988 -250 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H 4950 -100 50  0001 C CNN
-	1    7900 2350
-	1    0    0    -1  
-$EndComp
 NoConn ~ 8400 5000
 $Comp
 L R R7
@@ -332,7 +285,8 @@ P 5900 1050
 F 0 "R7" H 5970 1096 50  0000 L CNN
 F 1 "4.7k" H 5970 1005 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 580 -700 50  0001 C CNN
-F 3 "" H 650 -700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H 650 -700 50  0001 C CNN
+F 4 "RC0805FR-074K7L" H 5150 1450 60  0001 C CNN "manf#"
 	1    5900 1050
 	1    0    0    -1  
 $EndComp
@@ -343,7 +297,8 @@ P 3600 1100
 F 0 "R3" H 3670 1146 50  0000 L CNN
 F 1 "1k" H 3670 1055 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V -1720 -650 50  0001 C CNN
-F 3 "" H -1650 -650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -1650 -650 50  0001 C CNN
+F 4 "RC0805JR-071KL" H 5150 1450 60  0001 C CNN "manf#"
 	1    3600 1100
 	1    0    0    -1  
 $EndComp
@@ -354,19 +309,9 @@ P 4000 1100
 F 0 "R4" H 4070 1146 50  0000 L CNN
 F 1 "150" H 4070 1055 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V -1320 -650 50  0001 C CNN
-F 3 "" H -1250 -650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -1250 -650 50  0001 C CNN
+F 4 "RMCF0805JT150R" H 5150 1450 60  0001 C CNN "manf#"
 	1    4000 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C6
-U 1 1 58CB481C
-P 4000 1500
-F 0 "C6" H 4115 1546 50  0000 L CNN
-F 1 "10nF" H 4115 1455 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -900 350 50  0001 C CNN
-F 3 "" H -900 350 50  0001 C CNN
-	1    4000 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -377,6 +322,7 @@ F 0 "IC1" H 3150 7525 50  0000 R BNN
 F 1 "ATMEGA328PB-A" H 3150 7450 50  0000 R BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 3500 4650 50  0001 L CIN
 F 3 "http://www.atmel.com/Images/Atmel-42397-8-bit-AVR-Microcontroller-ATmega328PB_Datasheet.pdf" H 3250 6100 50  0001 C CNN
+F 4 "ATMEGA328PB-AU" H 5150 1450 60  0001 C CNN "manf#"
 	1    3550 6050
 	1    0    0    -1  
 $EndComp
@@ -384,43 +330,10 @@ Text GLabel 6000 1450 2    60   Input ~ 0
 FuelGaugeRestart
 Text GLabel 6000 1550 2    60   Input ~ 0
 BatteryLowAlert
-$Comp
-L CP1 C5
-U 1 1 58CB482C
-P 3600 1500
-F 0 "C5" H 3715 1546 50  0000 L CNN
-F 1 "1uF" H 3715 1455 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -1300 350 50  0001 C CNN
-F 3 "" H -1300 350 50  0001 C CNN
-	1    3600 1500
-	1    0    0    -1  
-$EndComp
 Text GLabel 7500 3200 0    60   Input ~ 0
 3V3
-$Comp
-L C C12
-U 1 1 58CB4834
-P 7650 3350
-F 0 "C12" H 7765 3396 50  0000 L CNN
-F 1 "0.1uF" H 7765 3305 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4738 750 50  0001 C CNN
-F 3 "" H 4700 900 50  0001 C CNN
-	1    7650 3350
-	1    0    0    -1  
-$EndComp
 Text Notes 9200 3900 0    60   ~ 0
 Status LEDs
-$Comp
-L C C11
-U 1 1 58CB483D
-P 7600 5150
-F 0 "C11" H 7715 5196 50  0000 L CNN
-F 1 "0.1uF" H 7715 5105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H 4688 2550 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H 4650 2700 50  0001 C CNN
-	1    7600 5150
-	1    0    0    -1  
-$EndComp
 Text GLabel 7450 5000 0    60   Input ~ 0
 3V3
 Text Notes 8950 4850 0    60   ~ 0
@@ -436,24 +349,14 @@ Battery fuel gauge
 Text Notes 6000 2350 0    60   ~ 0
 Voltage regulator
 $Comp
-L C C3
-U 1 1 58CB484B
-P 2850 4250
-F 0 "C3" H 2965 4296 50  0000 L CNN
-F 1 "0.1uF" H 2965 4205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -62 1650 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -100 1800 50  0001 C CNN
-	1    2850 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L CP1 C2
 U 1 1 58CB4852
 P 2450 4250
 F 0 "C2" H 2565 4296 50  0000 L CNN
 F 1 "10uF" H 2565 4205 50  0000 L CNN
 F 2 "Capacitors_SMD:CP_Elec_5x5.3" H -2450 3100 50  0001 C CNN
-F 3 "" H -2450 3100 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/875105359001.pdf" H -2450 3100 50  0001 C CNN
+F 4 "875105359001" H 5150 1450 60  0001 C CNN "manf#"
 	1    2450 4250
 	1    0    0    -1  
 $EndComp
@@ -466,6 +369,7 @@ F 0 "U1" H 3850 3467 50  0000 C CNN
 F 1 "TPS61200" H 3850 3376 50  0000 C CNN
 F 2 "SparkFun-PowerIC:DRC-10" H -11300 -800 50  0001 L CNN
 F 3 "https://www.sparkfun.com/datasheets/Prototyping/tps61200.pdf" H -11350 -350 50  0001 C CNN
+F 4 "TPS61200DRCR" H 5150 1450 60  0001 C CNN "manf#"
 	1    3850 3000
 	1    0    0    -1  
 $EndComp
@@ -477,6 +381,7 @@ F 0 "L1" V 3672 2350 50  0000 C CNN
 F 1 "4.7uH, 1.2A" V 3763 2350 50  0000 C CNN
 F 2 "T-AIM:INDUCTOR_4.7UH" H -10500 -1400 50  0001 C CNN
 F 3 "http://products.sumida.com/products/pdf/CDRH2D09.pdf" H -10500 -1400 50  0001 C CNN
+F 4 "CDRH2D18/HPNP-4R7NC" V 3850 2350 60  0001 C CNN "manf#"
 	1    3850 2350
 	0    1    1    0   
 $EndComp
@@ -488,6 +393,7 @@ F 0 "JP1" H 2100 1650 50  0000 C CNN
 F 1 "M02JST-PTH-2" H 2100 1550 50  0000 C CNN
 F 2 "SparkFun-Connectors:JST-2-PTH" H -10800 -2200 50  0001 C CNN
 F 3 "" H -10800 -2350 60  0001 C CNN
+F 4 "S2B-PH-K-S(LF)(SN)" H 5150 1450 60  0001 C CNN "manf#"
 	1    2100 1300
 	1    0    0    -1  
 $EndComp
@@ -497,8 +403,9 @@ U 1 1 58CB4870
 P 2350 2600
 F 0 "C1" H 2465 2646 50  0000 L CNN
 F 1 "10uF" H 2465 2555 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -11062 -1750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -11062 -1750 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -11100 -1600 50  0001 C CNN
+F 4 "F930J106MAA" H 5150 1450 60  0001 C CNN "manf#"
 	1    2350 2600
 	1    0    0    -1  
 $EndComp
@@ -508,8 +415,9 @@ U 1 1 58CB4877
 P 3050 2600
 F 0 "C4" H 3165 2646 50  0000 L CNN
 F 1 "0.1uF" H 3165 2555 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -10362 -1750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -10362 -1750 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -10400 -1600 50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 5150 1450 60  0001 C CNN "manf#"
 	1    3050 2600
 	1    0    0    -1  
 $EndComp
@@ -520,34 +428,13 @@ P 2750 2600
 F 0 "R1" H 2820 2646 50  0000 L CNN
 F 1 "2M" H 2820 2555 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V -10670 -1650 50  0001 C CNN
-F 3 "" H -10600 -1650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -10600 -1650 50  0001 C CNN
+F 4 "RMCF0805JT2M00" H 5150 1450 60  0001 C CNN "manf#"
 	1    2750 2600
 	1    0    0    -1  
 $EndComp
 Text GLabel 6700 2900 2    60   Input ~ 0
 3V3
-$Comp
-L C C7
-U 1 1 58CB4886
-P 4450 3550
-F 0 "C7" H 4565 3596 50  0000 L CNN
-F 1 "0.1uF" H 4565 3505 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -11262 -1450 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -11300 -1300 50  0001 C CNN
-	1    4450 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 58CB488D
-P 4850 3550
-F 0 "R5" H 4920 3596 50  0000 L CNN
-F 1 "220k" H 4920 3505 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -10970 -1250 50  0001 C CNN
-F 3 "" H -10900 -1250 50  0001 C CNN
-	1    4850 3550
-	1    0    0    -1  
-$EndComp
 $Comp
 L R R6
 U 1 1 58CB4894
@@ -555,19 +442,9 @@ P 5250 3150
 F 0 "R6" H 5320 3196 50  0000 L CNN
 F 1 "1.2M" H 5320 3105 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V -10570 -1650 50  0001 C CNN
-F 3 "" H -10500 -1650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -10500 -1650 50  0001 C CNN
+F 4 "RC0805FR-071M2L" H 5150 1450 60  0001 C CNN "manf#"
 	1    5250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R8
-U 1 1 58CB489B
-P 6150 3150
-F 0 "R8" H 6220 3196 50  0000 L CNN
-F 1 "2M" H 6220 3105 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -9670 -1650 50  0001 C CNN
-F 3 "" H -9600 -1650 50  0001 C CNN
-	1    6150 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -576,8 +453,9 @@ U 1 1 58CB48A2
 P 6500 3150
 F 0 "C10" H 6615 3196 50  0000 L CNN
 F 1 "22uF" H 6615 3105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -10462 -1550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -10462 -1550 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -10500 -1400 50  0001 C CNN
+F 4 "F930G226MAA" H 5150 1450 60  0001 C CNN "manf#"
 	1    6500 3150
 	1    0    0    -1  
 $EndComp
@@ -588,7 +466,8 @@ P 2750 3500
 F 0 "R2" H 2820 3546 50  0000 L CNN
 F 1 "220k" H 2820 3455 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V -10670 -750 50  0001 C CNN
-F 3 "" H -10600 -750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -10600 -750 50  0001 C CNN
+F 4 "RC0805JR-07220KL" H 5150 1450 60  0001 C CNN "manf#"
 	1    2750 3500
 	1    0    0    -1  
 $EndComp
@@ -625,18 +504,8 @@ F 0 "TP1" V 5404 5627 50  0000 L CNN
 F 1 "ExtOsc" V 5495 5627 50  0000 L CNN
 F 2 "Connectors:PINTST" H -750 250 50  0001 C CNN
 F 3 "" H -750 250 50  0001 C CNN
+F 4 "CES-101-02-T-S-RA" V 5450 5400 60  0001 C CNN "manf#"
 	1    5450 5400
-	0    1    1    0   
-$EndComp
-$Comp
-L TEST TP2
-U 1 1 58CB4965
-P 5450 5600
-F 0 "TP2" V 5404 5827 50  0000 L CNN
-F 1 "ExtOsc" V 5495 5827 50  0000 L CNN
-F 2 "Connectors:PINTST" H -750 450 50  0001 C CNN
-F 3 "" H -750 450 50  0001 C CNN
-	1    5450 5600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -645,20 +514,10 @@ U 1 1 58CB4971
 P 5300 5250
 F 0 "C8" H 5415 5296 50  0000 L CNN
 F 1 "22pF" H 5415 5205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -762 50  50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H -762 50  50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -800 200 50  0001 C CNN
+F 4 "06033J220GBSTR" H 5150 1450 60  0001 C CNN "manf#"
 	1    5300 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C9
-U 1 1 58CB4978
-P 5300 5750
-F 0 "C9" H 5415 5796 50  0000 L CNN
-F 1 "22pF" H 5415 5705 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1812_HandSoldering" H -762 550 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -800 700 50  0001 C CNN
-	1    5300 5750
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8400 5500
@@ -843,7 +702,8 @@ P 8600 2650
 F 0 "J1" H 8677 2691 50  0000 L CNN
 F 1 "ADXL345 Connector" H 8677 2600 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H -650 250 50  0001 C CNN
-F 3 "" H -650 250 50  0001 C CNN
+F 3 "" H 8600 2650 60  0001 C CNN
+F 4 "PREC009SAAN-RC" H 5150 1450 60  0001 C CNN "manf#"
 	1    8600 2650
 	1    0    0    -1  
 $EndComp
@@ -857,6 +717,7 @@ F 0 "SW1" H 8950 1435 50  0000 C CNN
 F 1 "Connection Button" H 8950 1344 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H -1000 -150 50  0001 C CNN
 F 3 "http://www.ckswitches.com/media/1471/pts645.pdf" H -1000 -150 50  0001 C CNN
+F 4 "PTS645SL50SMTR92 LFS" H 5150 1450 60  0001 C CNN "manf#"
 	1    8950 1200
 	1    0    0    -1  
 $EndComp
@@ -868,8 +729,9 @@ U 1 1 58CA7407
 P 8350 1000
 F 0 "R14" V 8557 1000 50  0000 C CNN
 F 1 "10k" V 8466 1000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -620 -2700 50  0001 C CNN
-F 3 "" H -550 -2700 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -620 -2700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -550 -2700 50  0001 C CNN
+F 4 "RC1206JR-0710KL" H 5150 1450 60  0001 C CNN "manf#"
 	1    8350 1000
 	1    0    0    -1  
 $EndComp
@@ -886,30 +748,8 @@ F 3 "" H 6300 -200 50  0001 C CNN
 	1    8350 850 
 	-1   0    0    1   
 $EndComp
-$Comp
-L SW_SPST SW2
-U 1 1 58CA7C1F
-P 8950 1900
-F 0 "SW2" H 8950 2135 50  0000 C CNN
-F 1 "Reset Button" H 8950 2044 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H -1000 550 50  0001 C CNN
-F 3 "http://www.ckswitches.com/media/1471/pts645.pdf" H -1000 550 50  0001 C CNN
-	1    8950 1900
-	1    0    0    -1  
-$EndComp
 Text GLabel 8150 1900 0    60   Input ~ 0
 ResetButton
-$Comp
-L R R15
-U 1 1 58CA7C26
-P 8350 1700
-F 0 "R15" V 8557 1700 50  0000 C CNN
-F 1 "10k" V 8466 1700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V -620 -2000 50  0001 C CNN
-F 3 "" H -550 -2000 50  0001 C CNN
-	1    8350 1700
-	1    0    0    -1  
-$EndComp
 Text GLabel 8350 1550 1    60   Input ~ 0
 3V3
 $Comp
@@ -938,8 +778,6 @@ Wire Bus Line
 Wire Wire Line
 	6850 6250 6850 6000
 Connection ~ 6850 6250
-Wire Wire Line
-	6550 6150 6550 6000
 Connection ~ 6550 6150
 Wire Wire Line
 	900  1050 900  1350
@@ -1253,4 +1091,210 @@ Wire Wire Line
 NoConn ~ 4850 5850
 NoConn ~ 5550 4650
 NoConn ~ 4850 6050
+$Comp
+L C C5
+U 1 1 58DA6EBB
+P 3600 1500
+F 0 "C5" H 3715 1546 50  0000 L CNN
+F 1 "1uF" H 3715 1455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 488 -200 50  0001 C CNN
+F 3 "" H 450 -50 50  0001 C CNN
+F 4 "293D105X0016A2TE3" H 3600 1500 60  0001 C CNN "manf#"
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 58DA6D18
+P 4000 1500
+F 0 "C6" H 4115 1546 50  0000 L CNN
+F 1 "10nF" H 4115 1455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 738 -200 50  0001 C CNN
+F 3 "" H 700 -50 50  0001 C CNN
+F 4 "ECH-U1H103JX5" H 4000 1500 60  0001 C CNN "manf#"
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 58DA97E9
+P 4450 3550
+F 0 "C7" H 4565 3596 50  0000 L CNN
+F 1 "0.1uF" H 4565 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -8962 -800 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -9000 -650 50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 6550 2400 60  0001 C CNN "manf#"
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58DAA1B7
+P 4850 3550
+F 0 "R5" H 4920 3596 50  0000 L CNN
+F 1 "220k" H 4920 3505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -8570 -700 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -8500 -700 50  0001 C CNN
+F 4 "RC0805JR-07220KL" H 7250 1500 60  0001 C CNN "manf#"
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 58DAB719
+P 6150 3150
+F 0 "R8" H 6220 3196 50  0000 L CNN
+F 1 "2M" H 6220 3105 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V -7270 -1100 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -7200 -1100 50  0001 C CNN
+F 4 "RMCF0805JT2M00" H 8550 2000 60  0001 C CNN "manf#"
+	1    6150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 58DAD7B7
+P 2850 4250
+F 0 "C3" H 2965 4296 50  0000 L CNN
+F 1 "0.1uF" H 2965 4205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -10562 -100 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -10600 50  50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 4950 3100 60  0001 C CNN "manf#"
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 58DAE6F2
+P 5300 5750
+F 0 "C9" H 5415 5796 50  0000 L CNN
+F 1 "22pF" H 5415 5705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H -762 550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -800 700 50  0001 C CNN
+F 4 "06033J220GBSTR" H 5150 1950 60  0001 C CNN "manf#"
+	1    5300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP2
+U 1 1 58DAED5D
+P 5450 5600
+F 0 "TP2" V 5404 5827 50  0000 L CNN
+F 1 "ExtOsc" V 5495 5827 50  0000 L CNN
+F 2 "Connectors:PINTST" H -750 450 50  0001 C CNN
+F 3 "" H -750 450 50  0001 C CNN
+F 4 "CES-101-02-T-S-RA" V 5450 5600 60  0001 C CNN "manf#"
+	1    5450 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 58DB07FD
+P 8350 1700
+F 0 "R15" V 8557 1700 50  0000 C CNN
+F 1 "10k" V 8466 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -620 -2000 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -550 -2000 50  0001 C CNN
+F 4 "RC1206JR-0710KL" H 5150 2150 60  0001 C CNN "manf#"
+	1    8350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPST SW2
+U 1 1 58DB0B43
+P 8950 1900
+F 0 "SW2" H 8950 2135 50  0000 C CNN
+F 1 "Connection Button" H 8950 2044 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_PTS645" H -1000 550 50  0001 C CNN
+F 3 "http://www.ckswitches.com/media/1471/pts645.pdf" H -1000 550 50  0001 C CNN
+F 4 "PTS645SL50SMTR92 LFS" H 5150 2150 60  0001 C CNN "manf#"
+	1    8950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 58DB0EDF
+P 7900 2350
+F 0 "C13" H 8015 2396 50  0000 L CNN
+F 1 "0.1uF" H 8015 2305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -5512 -2000 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -5550 -1850 50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 10000 1200 60  0001 C CNN "manf#"
+	1    7900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 58DB134B
+P 7650 3350
+F 0 "C12" H 7765 3396 50  0000 L CNN
+F 1 "0.1uF" H 7765 3305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -5762 -1000 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -5800 -850 50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 9750 2200 60  0001 C CNN "manf#"
+	1    7650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 58DB1A0B
+P 8300 4350
+F 0 "R13" V 8093 4350 50  0000 C CNN
+F 1 "220" V 8184 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -670 650 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -600 650 50  0001 C CNN
+F 4 "RC1206FR-07220RL" H 5150 1850 60  0001 C CNN "manf#"
+	1    8300 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C11
+U 1 1 58DB1F69
+P 7600 5150
+F 0 "C11" H 7715 5196 50  0000 L CNN
+F 1 "0.1uF" H 7715 5105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H -5812 800 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H -5850 950 50  0001 C CNN
+F 4 "293D104X9035A2TE3" H 9700 4000 60  0001 C CNN "manf#"
+	1    7600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 58DB255D
+P 8100 6100
+F 0 "R11" H 8170 6146 50  0000 L CNN
+F 1 "1k" H 8170 6055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2780 4350 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H 2850 4350 50  0001 C CNN
+F 4 "RC0805JR-071KL" H 9650 6450 60  0001 C CNN "manf#"
+	1    8100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 58DB2E85
+P 6550 5850
+F 0 "R9" V 6757 5850 50  0000 C CNN
+F 1 "10k" V 6666 5850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -2420 2150 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -2350 2150 50  0001 C CNN
+F 4 "RC1206JR-0710KL" H 3350 6300 60  0001 C CNN "manf#"
+	1    6550 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 58DB32E8
+P 6850 5850
+F 0 "R10" V 7057 5850 50  0000 C CNN
+F 1 "10k" V 6966 5850 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V -2120 2150 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" H -2050 2150 50  0001 C CNN
+F 4 "RC1206JR-0710KL" H 3650 6300 60  0001 C CNN "manf#"
+	1    6850 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 6150 6550 6000
 $EndSCHEMATC
