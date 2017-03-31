@@ -5,4 +5,22 @@ D Connector, single row, 01x08, pin header
 K connector
 $ENDCMP
 #
+$CMP TPS61200
+D Adjustable Output, Low Input Voltage Synchronous Boost Converter With 1.3-A Switches, VSON (10) Package
+K boost step-up DC/DC synchronous
+F www.ti.com/lit/ds/symlink/tps61200.pdf
+$ENDCMP
+#
+$CMP TPS61201
+D Fixed 3.3V Output, Low Input Voltage Synchronous Boost Converter With 1.3-A Switches, VSON (10) Package
+K boost step-up DC/DC synchronous
+F www.ti.com/lit/ds/symlink/tps61200.pdf
+$ENDCMP
+#
+$CMP TPS61202
+D Fixed 5V Output, Low Input Voltage Synchronous Boost Converter With 1.3-A Switches, VSON (10) Package
+K boost step-up DC/DC synchronous
+F www.ti.com/lit/ds/symlink/tps61200.pdf
+$ENDCMP
+#
 #End Doc Library

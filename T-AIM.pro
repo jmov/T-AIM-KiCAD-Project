@@ -1,4 +1,4 @@
-update=pe 17. maaliskuuta 2017 09.20.47
+update=pe 31. maaliskuuta 2017 11.05.58
 version=1
 last_client=kicad
 [pcbnew]
@@ -37,7 +37,7 @@ LabSize=60
 ERC_TestSimilarLabels=1
 [eeschema]
 version=1
-LibDir=
+LibDir=library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -127,3 +127,4 @@ LibName85=triac_thyristor
 LibName86=ttl_ieee
 LibName87=SparkFun
 LibName88=library/kicad-parts/libraries/maxium
+LibName89=library/T-AIM/T-AIMCOMPS

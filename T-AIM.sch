@@ -87,6 +87,7 @@ LIBS:triac_thyristor
 LIBS:ttl_ieee
 LIBS:SparkFun
 LIBS:maxium
+LIBS:T-AIMCOMPS
 LIBS:T-AIM-cache
 EELAYER 26 0
 EELAYER END
@@ -392,17 +393,6 @@ F 3 "" H -2450 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2250 6750
-$Comp
-L TPS61200 U1
-U 1 1 58CB485B
-P 3850 3000
-F 0 "U1" H 3850 3467 50  0000 C CNN
-F 1 "TPS61200" H 3850 3376 50  0000 C CNN
-F 2 "SparkFun-PowerIC:DRC-10" H -11300 -800 50  0001 L CNN
-F 3 "https://www.sparkfun.com/datasheets/Prototyping/tps61200.pdf" H -11350 -350 50  0001 C CNN
-	1    3850 3000
-	1    0    0    -1  
-$EndComp
 $Comp
 L L L1
 U 1 1 58CB4862
@@ -1191,4 +1181,15 @@ Wire Wire Line
 	5300 950  5300 950 
 Wire Wire Line
 	5400 850  5400 950 
+$Comp
+L TPS61200 U1
+U 1 1 58DE14EE
+P 3850 3000
+F 0 "U1" H 3850 3467 50  0000 C CNN
+F 1 "TPS61200" H 3850 3376 50  0000 C CNN
+F 2 "T-AIM:DRC-10-Thermal-Vias" H 2250 -650 50  0001 L CNN
+F 3 "" H 2200 -200 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
