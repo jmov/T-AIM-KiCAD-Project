@@ -348,7 +348,7 @@ U 1 1 58CB483D
 P 7600 5150
 F 0 "C9" H 7715 5196 50  0000 L CNN
 F 1 "0.1uF" H 7715 5105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210_HandSoldering" H 4688 2550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4688 2550 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2016/09/27/MLCC.pdf" H 4650 2700 50  0001 C CNN
 	1    7600 5150
 	1    0    0    -1  
